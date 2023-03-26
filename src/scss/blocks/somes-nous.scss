@@ -1,0 +1,91 @@
+.somes-nous {
+   background: #121212;
+   @include adaptiveValue("padding-top", 85, 34);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   color: #fff;
+   position: relative;
+   &::after {
+      content: "";
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("@img/somes/decor3.svg") 0 0 / cover no-repeat;
+      @media (max-width: $mobile) {
+         display: none;
+      }
+   }
+   // .somes-nous__container
+   &__container {
+      position: relative;
+      z-index: 2;
+   }
+   // .somes-nous__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(23);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(7);
+         }
+      }
+   }
+   // .somes-nous__text
+   &__text {
+      line-height: math.div(28, 16);
+      color: $greyColor;
+      max-width: rem(1033);
+      margin: 0 auto rem(30);
+      text-align: center;
+      @media (max-width: $mobile) {
+         margin-bottom: rem(15);
+      }
+   }
+   // .somes-nous__slider
+   &__slider {
+      @media (max-width: $mobile) {
+         overflow: visible !important;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(20);
+         }
+      }
+      padding-top: rem(20);
+   }
+   // .somes-nous__wrapper
+   &__wrapper {
+   }
+   // .somes-nous__slide
+   &__slide {
+      width: rem(255);
+      &:nth-child(even) {
+         transform: translateY(-17px);
+      }
+   }
+   // .somes-nous__image-ibg
+   &__image-ibg {
+      padding-bottom: percent(175, 255);
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      display: block;
+      @media (any-hover: hover) {
+         &:hover {
+            img {
+               transform: scale(1.05);
+            }
+         }
+      }
+      img {
+         transition: all 0.6s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      }
+   }
+   // .somes-nous__all-photo
+   &__all-photo {
+      display: flex;
+      margin: 0 auto;
+      max-width: rem(213);
+      background-color: transparent;
+   }
+}

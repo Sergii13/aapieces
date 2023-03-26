@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Cabinet_1"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="profile">
+            <div class="profile__container">
+               <div class="breadcrumb profile__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Personal account
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h1 class="title profile__title">
+                  Personal account
+               </h1>
+               <div class="profile__nav nav-profile">
+                  <select name="form[]" data-class-modif="profile" class="form js">
+                     <option data-href="#" data-asset="@img/profile/01.svg" value="1" selected>Your profile</option>
+                     <option data-href="#" data-asset="@img/profile/02.svg" value="2">My orders</option>
+                     <option data-href="#" data-asset="@img/profile/03.svg" value="3">Wishlist</option>
+                     <option data-href="#" data-asset="@img/profile/04.svg" value="4">My addresses</option>
+                     <option data-href="#" data-asset="@img/profile/05.svg" value="5">My cars</option>
+                  </select>
+                  <ul class="nav-profile__list">
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link active">
+                           Your profile
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p01"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My orders
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p02"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           Wishlist
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My addresses
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p04"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My cars
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p05"></use>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <form action="#" class="profile__form form-profile">
+                  <div class="form-profile__image-change">
+                     <div class="form-profile__avatar-ibg">
+                        <img id="file-ip-1-preview" src="@img/profile/avatar.png" alt="Image">
+                     </div>
+                     <span class="form-profile__image-row">
+                        <input onchange="showPreview(event);" class="form-profile__image-input" accept="image/*"
+                           type='file' id="imgInp" />
+                        <label for="imgInp">
+                           <img src="@img/profile/add-photo.svg" alt="Icon" class="form-profile__image-icon">
+                           <span>change photo</span>
+                        </label>
+                     </span>
+                  </div>
+                  <div class="form-profile__name">
+                     Ivan Smirnov
+                  </div>
+                  <div class="form-profile__rows">
+                     <div class="form-profile__row">
+                        <div class="item">
+                           <label class="item__label">Phone
+                           </label>
+                           <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                              placeholder="+38 (050) 35-52-548" class="input item__input">
+                        </div>
+                        <div class="item">
+                           <label class="item__label">Country
+                           </label>
+                           <div class="select select_form"> <select>
+                                 <option value="" selected>Country</option>
+                                 <option value="2">Germany №2</option>
+                                 <option value="3">Germany №3</option>
+                                 <option value="4">Germany №4</option>
+                              </select></div>
+                        </div>
+                        <div class="item">
+                           <label class="item__label">City
+                           </label>
+                           <div class="select select_form"> <select>
+                                 <option value="" selected>City</option>
+                                 <option value="2">Germany №2</option>
+                                 <option value="3">Germany №3</option>
+                                 <option value="4">Germany №4</option>
+                              </select></div>
+                        </div>
+                        <div class="item">
+                           <label class="item__label">The address
+                           </label>
+                           <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                              placeholder="The address" class="input item__input">
+                        </div>
+                     </div>
+                     <div class="form-profile__row">
+                        <div class="item">
+                           <label class="item__label">Card
+                           </label>
+                           <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                              placeholder="4444 **** **** 5142" class="input item__input">
+                        </div>
+                        <button class="form-profile__add-button button button_border">
+                           <img src="@img/profile/plus.svg" alt="Icon"> Add card</button>
+                     </div>
+                     <div class="form-profile__row">
+                        <div class="item">
+                           <label class="item__label">Change password
+                           </label>
+                           <input autocomplete="off" type="password" name="form[]" data-error="Ошибка"
+                              placeholder="**** **** **** ****" class="input item__input">
+                        </div>
+                        <button class="form-profile__add-button button button_border">Change passwordd</button>
+                     </div>
+                  </div>
+                  <div class="form-profile__button-wraap">
+                     <button class="button form-profile__save-button">
+                        Save
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

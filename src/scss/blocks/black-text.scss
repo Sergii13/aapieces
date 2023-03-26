@@ -1,0 +1,23 @@
+.black-text {
+   background: #121212;
+   @include adaptiveValue("padding-bottom", 70, 41);
+   @include adaptiveValue("padding-top", 64, 35);
+   color: $whiteColor;
+   // .black-text__container
+   &__container {
+      text-align: center;
+   }
+   // .black-text__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+   // .black-text__descr
+   &__descr {
+      font-size: rem(14);
+      line-height: 130%;
+      max-width: rem(675);
+      margin: 0 auto;
+   }
+}

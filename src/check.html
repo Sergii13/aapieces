@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Bras de suspension pour votre voiture"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="check">
+            <div class="check__container">
+               <div class="breadcrumb check__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Checkout
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h1 class="title check__title">
+                  Checkout
+               </h1>
+               <form action="#" class="check__form">
+                  <div class="check__row">
+                     <div class="check__left">
+                        <div class="check__block check-block">
+                           <div class="check-block__title">
+                              Your data
+                           </div>
+                           <div class="check-block__row">
+                              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Name"
+                                 class="input">
+                              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                 placeholder="Phone" class="input">
+                           </div>
+                        </div>
+                        <div class="check__block check-block">
+                           <div class="check-block__title">
+                              Delivery
+                           </div>
+                           <div class="check-block__row">
+                              <div class="select_form select">
+                                 <select>
+                                    <option value="" selected>Choose country</option>
+                                    <option value=" 2">Germany</option>
+                                    <option value="3">Ukraine</option>
+                                    <option value="4">Brasil</option>
+                                 </select>
+                              </div>
+                              <div class="select_form select">
+                                 <select>
+                                    <option value="" selected>Choose city</option>
+                                    <option value=" 2">Germany</option>
+                                    <option value="3">Ukraine</option>
+                                    <option value="4">Brasil</option>
+                                 </select>
+                              </div>
+                              <div class="select_form select">
+                                 <select>
+                                    <option value="" selected>Choose a shipping method</option>
+                                    <option value=" 2">Germany</option>
+                                    <option value="3">Ukraine</option>
+                                    <option value="4">Brasil</option>
+                                 </select>
+                              </div>
+                              <div class="select_form select">
+                                 <select>
+                                    <option value="" selected>Check your mail</option>
+                                    <option value=" 2">Germany</option>
+                                    <option value="3">Ukraine</option>
+                                    <option value="4">Brasil</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="check__block check-block">
+                           <div class="check-block__title">
+                              Payment
+                           </div>
+                           <div class="check-block__radiobuttons">
+                              <div class="checkbox checkbox_radio">
+                                 <input checked id="1c_1" data-error="Ошибка" class="checkbox__input" type="radio"
+                                    value="1" name="form[]">
+                                 <label for="1c_1" class="checkbox__label"><span class="checkbox__text">Bank
+                                       transfer</span></label>
+                                 <span class="check-block__descr">
+                                    VISA or Master Card bank card on our website
+                                 </span>
+                              </div>
+                              <div class="checkbox checkbox_radio">
+                                 <input id="1c1_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                                    name="form[]">
+                                 <label for="1c1_1" class="checkbox__label"><span class="checkbox__text">In
+                                       cash</span></label>
+                                 <span class="check-block__descr">
+
+                                 </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="check-block check__block">
+                           <div class="product-payment__row">
+                              <div class="product-payment__item">
+                                 <img src="@img/payment/01.png" alt="Image">
+                              </div>
+                              <div class="product-payment__item">
+                                 <img src="@img/payment/02.png" alt="Image">
+                              </div>
+                              <div class="product-payment__item">
+                                 <img src="@img/payment/03.png" alt="Image">
+                              </div>
+                              <div class="product-payment__item">
+                                 <img src="@img/payment/04.png" alt="Image">
+                              </div>
+                              <div class="product-payment__item">
+                                 <img src="@img/payment/05.png" alt="Image">
+                              </div>
+                              <div class="product-payment__item">
+                                 <img src="@img/payment/06.png" alt="Image">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="check__right">
+                        <div class="check__info check-info">
+                           <div class="check-info__title">
+                              Items in the cart
+                           </div>
+                           <div class="check-info__items">
+                              <div data-da-index class="check-info__item item-check">
+                                 <div class="item-check__wrap"> <button class="item-check__delete">
+                                       <img src="@img/svg/remove.svg" alt="Icon">
+                                    </button>
+                                    <div class="item-check__row">
+                                       <a href="" class="item-check__image">
+                                          <img src="@img/profile/order.png" alt="">
+                                       </a>
+                                       <div class="item-check__content">
+                                          <div class="item-check__detail">
+                                             <a data-da=".item-check__wrap,550,1" href="" class="item-check__link">
+                                                RIDEX Jeu de plaquettes de frein
+                                             </a>
+                                             <ul class="item-check__descr">
+                                                <li>
+                                                   <b> Réf.:</b> 402B0336
+                                                </li>
+                                                <li>
+                                                   <b> Amount: </b> 1
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="item-check__price">
+                                             23,75 €
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              </div>
+
+                              <div data-da-index class="check-info__item item-check">
+                                 <div class="item-check__wrap"> <button class="item-check__delete">
+                                       <img src="@img/svg/remove.svg" alt="Icon">
+                                    </button>
+                                    <div class="item-check__row">
+                                       <a href="" class="item-check__image">
+                                          <img src="@img/profile/order.png" alt="">
+                                       </a>
+                                       <div class="item-check__content">
+                                          <div class="item-check__detail">
+                                             <a data-da=".item-check__wrap,550,1" href="" class="item-check__link">
+                                                RIDEX Jeu de plaquettes de frein
+                                             </a>
+                                             <ul class="item-check__descr">
+                                                <li>
+                                                   <b> Réf.:</b> 402B0336
+                                                </li>
+                                                <li>
+                                                   <b> Amount: </b> 1
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="item-check__price">
+                                             23,75 €
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <div class="check-info__total">
+                              <div class="check-info__count">
+                                 Together: <b>2 products</b>
+                              </div>
+                              <div class="check-info__total-sum">
+                                 For the amount: <b> 46€</b>
+                              </div>
+                           </div>
+                           <button class="button check-info__button">
+                              Сonfirm the order
+                           </button>
+                        </div>
+                        <div class="check__info check-info">
+                           <div class="check-info__title">
+                              Utiliser le coupon
+                           </div>
+                           <div class="check-info__form">
+                              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                 placeholder="Entrez votre adresse" class="input">
+                              <button class="button button_border check-info__button-coupon">
+                                 Appliquer
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

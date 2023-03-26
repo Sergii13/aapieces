@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Fabricants de pièces auto"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+
+         <section class="detail detail_fabric">
+            <div class="detail__container">
+               <div class="breadcrumb detail__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Fabricants de pièces auto
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="detail__row">
+                  <aside class="filter detail__filter">
+                     <button data-close-filter class="filter__close">
+                        <img src="@img/detail/open-arrow.svg" alt="Icon" class="filter__close-icon">
+                        fermer le filtre
+                     </button>
+                     <div class="aside-top__title">
+                        SAISIE DU NUMÉRO D'IMMATRICULATION
+                     </div>
+                     <div data-tabs class="top-tabs">
+                        <nav data-tabs-titles class="top-tabs__navigation">
+                           <button type="submit" class="top-tabs__title _tab-active">
+                              <img src="@img/top/01.svg" alt="Icon" class="top-tabs__icon">
+                              SAISIE DU NUMÉRO 'IMMATRICULATION
+                           </button>
+                           <button type="submit" class="top-tabs__title">
+                              <img src="@img/top/02.svg" alt="Icon" class="top-tabs__icon">
+                              DÉMARREZ VOTRE RECHERCHE</button>
+                        </nav>
+                        <div data-tabs-body class="top-tabs__content">
+                           <div class="top-tabs__body">
+                              <div class="top-tabs__title2">
+                                 Number car
+                              </div>
+                              <form action="#" class="top-tabs__form form-top">
+                                 <div class="form-top__item">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="AB-123-CD" class="input form-top__input">
+                                    <span class="form-top__label">
+                                       <img src="@img/top/eu.svg" alt="Icon">
+                                    </span>
+                                 </div>
+                                 <button class="button form-top__button">
+                                    Rechercher
+                                 </button>
+                              </form>
+                              <div class="top-tabs__bottom">
+                                 <span>or</span>
+                              </div>
+                              <a href="" class="top-tabs__link button button_border">
+                                 Démarrez votre recherche de pièces en sélectionnant une voiture
+                              </a>
+                           </div>
+                           <div class="top-tabs__body">
+                              <div class="top-tabs__title2">
+                                 Number car
+                              </div>
+                              <form data-one-select action="#" class="top-tabs__form form-top">
+                                 <div class="form-top__item">
+                                    <div class="select select_top">
+                                       <select>
+                                          <option value="" selected>Choisissez une marque</option>
+                                          <option value="2">Punkt1</option>
+                                          <option value="3">Punkt2</option>
+                                          <option value="4">Punkt3</option>
+                                       </select>
+                                    </div>
+                                    <span class="form-top__label">
+                                       1
+                                    </span>
+                                 </div>
+                                 <div class="form-top__item">
+                                    <div class="select select_top">
+                                       <select>
+                                          <option value="" selected>Choisissez une marque</option>
+                                          <option value="2">Punkt1</option>
+                                          <option value="3">Punkt2</option>
+                                          <option value="4">Punkt3</option>
+                                       </select>
+                                    </div>
+                                    <span class="form-top__label">
+                                       2
+                                    </span>
+                                 </div>
+                                 <div class="form-top__item">
+                                    <div class="select select_top">
+                                       <select>
+                                          <option value="" selected>Choisissez une marque</option>
+                                          <option value="2">Punkt1</option>
+                                          <option value="3">Punkt2</option>
+                                          <option value="4">Punkt3</option>
+                                       </select>
+                                    </div>
+                                    <span class="form-top__label">
+                                       3
+                                    </span>
+                                 </div>
+                                 <button class="button form-top__button">
+                                    Rechercher
+                                 </button>
+                              </form>
+                              <div class="top-tabs__bottom">
+                                 <span>or</span>
+                              </div>
+                              <a href="" class="top-tabs__link button button_border">
+                                 Recherche par numéro de voiture
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filter__top top-filter">
+                        <form action="#" class="top-filter__form">
+                           <div data-one-select class="top-filter__block">
+                              <h4 class="top-filter__title">
+                                 PRÉCISEZ LES <br>
+                                 INFORMATIONS DE VOTRE VÉHICULE
+                              </h4>
+                              <div class="top-filter__inner">
+                                 <div class="top-filter__item">
+                                    <span class="top-filter__digit">
+                                       1
+                                    </span>
+                                    <div class="select select_filter"> <select>
+                                          <option value="1" selected>DAF</option>
+                                          <option value="2">DAF №2</option>
+                                          <option value="3">DAF №3</option>
+                                          <option value="4">DAF №4</option>
+                                       </select></div>
+
+                                 </div>
+                                 <div class="top-filter__item">
+                                    <span class="top-filter__digit">
+                                       2
+                                    </span>
+                                    <div class="select select_filter"> <select>
+                                          <option value="1" selected>DAF</option>
+                                          <option value="2">DAF №2</option>
+                                          <option value="3">DAF №3</option>
+                                          <option value="4">DAF №4</option>
+                                       </select></div>
+                                 </div>
+                                 <div class="top-filter__item">
+                                    <span class="top-filter__digit">
+                                       3
+                                    </span>
+                                    <div class="select select_filter"> <select>
+                                          <option value="1" selected>DAF</option>
+                                          <option value="2">DAF №2</option>
+                                          <option value="3">DAF №3</option>
+                                          <option value="4">DAF №4</option>
+                                       </select></div>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <div data-one-select class="top-filter__block">
+                              <h4 class="top-filter__title">
+                                 INFORMATIONS ADDITIONNELLES
+                              </h4>
+                              <div class="top-filter__grid">
+                                 <div class="select select_filter"> <select>
+                                       <option value="1" selected>DAF</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select></div>
+                                 <div class="select select_filter"> <select>
+                                       <option value="1" selected>DAF</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select></div>
+                                 <div class="select select_filter"> <select>
+                                       <option value="1" selected>DAF</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select></div>
+                                 <div class="select select_filter"> <select>
+                                       <option value="1" selected>DAF</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select></div>
+                                 <div class="select select_filter"> <select>
+                                       <option value="1" selected>DAF</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select></div>
+                                 <div class="select select_filter"> <select>
+                                       <option value="1" selected>DAF</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select></div>
+                              </div>
+                           </div>
+                           <button class="button top-filter__button">
+                              Rechercher
+                           </button>
+                        </form>
+                     </div>
+                  </aside>
+                  <div class="detail__content">
+
+                     <div class="fabric">
+                        <h1 class="title fabric__title">
+                           Catalogue de fabricants de pièces détachées
+                        </h1>
+                        <div class="fabric__descr">
+                           <p>Le catalogue de notre magasin propose 501 marques de pièces détachées pour auto et moto,
+                              ainsi que des fabricants de pneus, accessoires automobiles, outils, huiles et produits
+                              d'entretien automobiles. Économisez de l'argent lors de la réparation et de l'entretien de
+                              votre automobile en achetant des produits automobiles de qualité similaire à ceux des FEO.
+                           </p>
+                        </div> <button data-filter class="detail__open-filter button">
+                           Filtre
+                        </button>
+                        <div class="fabric__wrap">
+                           <ul class="fabric__list">
+                              <li class="active">
+                                 <a href="">
+                                    a
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    b
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    c
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    d
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    e
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    f
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    g
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    h
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    i
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    j
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    k
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    l
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    m
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    o
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    p
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    q
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    r
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    t
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    u
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    v
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    w
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    y
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    z
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="">
+                                    #
+                                 </a>
+                              </li>
+                           </ul>
+                           <div class="fabric__body">
+                              <div class="fabric__grid-layout">
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/01.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/02.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/03.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/04.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/01.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/02.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/03.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/04.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/01.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/02.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/03.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/04.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/01.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/02.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/03.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/04.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/01.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/02.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/03.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                                 <div class="fabric__item item-fabric">
+                                    <a href="" class="item-fabric__image">
+                                       <img src="@img/fabric/04.png" alt="Image">
+                                    </a>
+                                    <a href="" class="item-fabric__link">
+                                       Afficher l'adresse
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="store">
+            <div class="store__container">
+               <div class="store__row">
+                  <div class="store__image"><img src="@img/store/phone.png" alt="Icon"></div>
+                  <div class="store__info">
+                     Acheter à travers l'appli est toujours moins cher que sur le site web
+                  </div>
+                  <div class="store__column">
+                     <div class="store__qr">
+                        <img src="@img/store/qr.png" alt="Qr">
+                     </div>
+                     <div class="store__buttons">
+                        <a href="" class="store__button">
+                           <img src="@img/store/button1.png" alt="Button">
+                        </a>
+                        <a href="" class="store__button">
+                           <img src="@img/store/button2.png" alt="Button">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <section class="social">
+            <div class="social__container">
+               <h2 class="title social__title">
+                  RÉPARER SA VOITURE N'A JAMAIS ÉTÉ AUSSI SIMPLE
+               </h2>
+               <div class="social__descr">
+                  Finis les instructions compliquées et les schémas déroutants. Suivez les tutoriels pratiques et
+                  simples d'AUTODOC pour réparer votre voiture
+               </div>
+               <div class="social__slider swiper">
+                  <div class="social__wrapper swiper-wrapper">
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/01.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo1.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social2.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Leçons vidéo de nos experts : toutes les informations nécessaires pour réparer votre
+                                 voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo2.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social3.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Suivez les tendances et l'actualité et profitez de conseils et articles sur les
+                                 voitures.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo3.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pagination social__pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

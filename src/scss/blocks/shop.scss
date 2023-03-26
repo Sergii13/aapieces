@@ -1,0 +1,65 @@
+.shop {
+   @include adaptiveValue("padding-top", 67, 35);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   &.grey {
+      background: #f2f2f2;
+   }
+   &_small {
+      padding: rem(10) 0 rem(20);
+   }
+   // .shop__container
+   &__container {
+   }
+   &__descr {
+      font-size: rem(14);
+      text-align: center;
+      line-height: 130%;
+      &:not(:last-child) {
+         margin-bottom: rem(29);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(17);
+         }
+      }
+   }
+   // .shop__title
+   &__title {
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: rem(18);
+      }
+   }
+   // .shop__slider-wrap
+   &__slider-wrap {
+      position: relative;
+   }
+   // .shop__slider
+   &__slider {
+      @media (max-width: $tablet) {
+         overflow: visible !important;
+      }
+   }
+   &__pagination {
+      margin-top: rem(20);
+      @media (min-width: em(1240)) {
+         display: none;
+      }
+   }
+   // .shop__wrapper
+   &__wrapper {
+   }
+   // .shop__slide
+   &__slide {
+   }
+   // .shop__card
+   &__card {
+   }
+   // .shop__arrows
+   &__arrows {
+   }
+   // .shop__prev
+   &__prev {
+   }
+   // .shop__next
+   &__next {
+   }
+}

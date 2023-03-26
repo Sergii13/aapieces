@@ -1,0 +1,110 @@
+.country {
+   background: #121212;
+   position: relative;
+   @include adaptiveValue("padding-top", 70, 35);
+   @include adaptiveValue("padding-bottom", 70, 35);
+   color: #fff;
+   // .country__container
+   &__container {
+   }
+   &__image-pc {
+      @media (min-width: $tablet) {
+         display: block;
+      }
+      @media (max-width: $tablet) {
+         display: none;
+      }
+   }
+   &__image-mob {
+      @media (min-width: $tablet) {
+         display: none;
+      }
+      @media (max-width: $tablet) {
+         display: block;
+      }
+   }
+   // .country__map
+   &__map {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media (max-width: em(1750)) {
+         max-width: percent(1000, 1750);
+      }
+      @media (max-width: $tablet) {
+         max-width: percent(305, 320);
+         width: 100%;
+         img {
+            width: 100%;
+         }
+      }
+   }
+   // .country__title
+   &__title {
+      font-weight: 700;
+      @include adaptiveValue("font-size", 50, 18);
+      line-height: 139.3%;
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+         @media (max-width: $tablet) {
+            margin-bottom: percent(343, 320);
+         }
+      }
+      position: relative;
+      z-index: 2;
+   }
+   // .country__row
+   &__row {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: rem(1016);
+      gap: rem(80);
+      align-items: flex-end;
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(1, 1fr);
+         max-width: rem(560);
+         gap: rem(30);
+      }
+      @media (max-width: $mobile) {
+         gap: rem(15);
+      }
+   }
+   // .country__grid-layout
+   &__grid-layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(30);
+      @media (max-width: $mobile) {
+         gap: rem(15);
+      }
+   }
+   // .country__item
+   &__item {
+   }
+}
+.item-country {
+   display: flex;
+   align-items: center;
+   gap: rem(9);
+   @media (max-width: $mobileSmall) {
+      gap: rem(4);
+   }
+   // .item-country__image
+   &__image {
+      max-width: rem(42);
+      background-color: #fff;
+      img {
+         border: 2px solid #fff;
+      }
+      @media (max-width: $mobileSmall) {
+         max-width: rem(24);
+      }
+   }
+   // .item-country__info-text
+   &__info-text {
+      @include adaptiveValue("font-size", 20, 16);
+      line-height: math.div(24, 20);
+   }
+}

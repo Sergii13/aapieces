@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Cabinet_3"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="profile">
+            <div class="profile__container">
+               <div class="breadcrumb profile__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Personal account
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h1 class="title profile__title">
+                  Personal account
+               </h1>
+               <div class="profile__nav nav-profile">
+                  <select name="form[]" data-class-modif="profile" class="form js">
+                     <option data-href="#" data-asset="@img/profile/01.svg" value="1">Your profile</option>
+                     <option data-href="#" data-asset="@img/profile/02.svg" value="2">My orders</option>
+                     <option data-href="#" data-asset="@img/profile/03.svg" value="3" selected>Wishlist</option>
+                     <option data-href="#" data-asset="@img/profile/04.svg" value="4">My addresses</option>
+                     <option data-href="#" data-asset="@img/profile/05.svg" value="5">My cars</option>
+                  </select>
+                  <ul class="nav-profile__list">
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link ">
+                           Your profile
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p01"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link ">
+                           My orders
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p02"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link active">
+                           Wishlist
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My addresses
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p04"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My cars
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p05"></use>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="profile__wish wish-profile">
+                  <div class="wish-profile__grid-layout">
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                     <div class="shop__card card">
+                        <button class="card__heart active">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="card__top">
+                           <a href="" class="card__image-ibg">
+                              <img src="@img/shop/01.png" alt="Image">
+                           </a>
+                           <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                           <div class="card__art">
+                              Réf.: 402B0336
+                           </div>
+                        </div>
+                        <div class="card__bottom">
+                           <div class="card__price">
+                              23,75 €
+                           </div>
+                           <div class="card__descr">
+                              <p>20% de TVA inclus ,</p>
+                              <p>frais de livraison</p>
+                           </div>
+                           <a href="" class="card__button button">
+                              Add to cart
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

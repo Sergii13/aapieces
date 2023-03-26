@@ -1,0 +1,287 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button-icon {
+   width: rem(48);
+   border-radius: 5px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $redColor;
+   height: rem(47);
+   padding: rem(7);
+   transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+   @media (any-hover: hover) {
+      &:hover {
+         box-shadow: 0 0 5px $redColor;
+      }
+   }
+}
+.title {
+   font-weight: 700;
+   @include adaptiveValue("font-size", 25, 18);
+   line-height: math.div(30, 25);
+   text-align: center;
+}
+.pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: rem(8);
+   &.white {
+      .swiper-pagination-bullet {
+         border: 1px solid #c4c4c4;
+      }
+      .swiper-pagination-bullet-active {
+         border: 1px solid $redColor;
+      }
+   }
+   .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.2);
+      width: rem(8);
+      border-radius: 50%;
+      cursor: pointer;
+      height: rem(8);
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+   }
+   .swiper-pagination-bullet-active {
+      background-color: $redColor;
+   }
+}
+.subtitle {
+   font-weight: 800;
+   @include adaptiveValue("font-size", 20, 14);
+   display: inline-flex;
+   align-items: center;
+   line-height: math.div(30, 20);
+   padding: rem(8.4) rem(20) rem(4.7) rem(0);
+   position: relative;
+   font-family: "Poppins";
+   color: #fff;
+   @media (max-width: $mobileSmall) {
+      max-width: rem(270);
+      font-size: rem(14);
+   }
+
+   span {
+      position: relative;
+      z-index: 2;
+   }
+   &::after {
+      content: "";
+      background: #ee1827;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      transform: skewX(-35deg);
+      left: 10px;
+      width: 100%;
+      @media (max-width: $mobileSmall) {
+         width: 200%;
+         left: 20px;
+         transform: skewX(-30deg);
+      }
+   }
+}
+.breadcrumb {
+   // .breadcrumb__list
+   &__list {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+   }
+   // .breadcrumb__item
+   &__item {
+      display: inline;
+      &:not(:last-child) {
+         &::after {
+            content: "/";
+            display: inline-block;
+            color: inherit;
+            position: relative;
+            margin: 0 rem(2);
+            font-size: rem(18);
+            line-height: math.div(22, 18);
+         }
+      }
+   }
+   // .breadcrumb__link
+   &__link {
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+   }
+   // .breadcrumb__current
+   &__current {
+      color: $redColor;
+      font-weight: 600;
+   }
+}
+.card {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #e0e0e0;
+   border-radius: 5px;
+   padding: rem(19) rem(15) rem(15) rem(20);
+   gap: rem(17);
+   position: relative;
+   flex-shrink: 0;
+   width: rem(160);
+   // .card__top
+   &__top {
+      flex: 1 1 auto;
+   }
+   &__icon {
+      width: rem(22);
+      fill: #e0e0e0;
+      height: rem(20);
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+   }
+   &__heart {
+      position: absolute;
+      top: 13px;
+      width: rem(26);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      right: 6px;
+      height: rem(26);
+      @media (any-hover: hover) {
+         &:hover {
+            .card__icon {
+               fill: $redColor;
+            }
+         }
+      }
+      &.active {
+         .card__icon {
+            fill: $redColor;
+         }
+      }
+   }
+   // .card__image-ibg
+   &__image-ibg {
+      display: flex;
+      align-items: center;
+      height: rem(94);
+      justify-content: center;
+      img {
+         object-fit: contain;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .card__title
+   &__title {
+      font-weight: 600;
+      font-size: rem(13);
+      line-height: math.div(17, 13);
+      letter-spacing: 0.133333px;
+      display: block;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(5);
+      }
+   }
+   // .card__art
+   &__art {
+      font-size: rem(10);
+      line-height: math.div(12, 10);
+      letter-spacing: 0.266667px;
+   }
+   // .card__bottom
+   &__bottom {
+   }
+   // .card__price
+   &__price {
+      font-weight: 700;
+      font-size: rem(24);
+      line-height: math.div(26, 24);
+      letter-spacing: 0.666667px;
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: rem(2);
+      }
+   }
+   // .card__descr
+   &__descr {
+      font-size: rem(9);
+      line-height: math.div(11, 9);
+      letter-spacing: 0.133333px;
+      &:not(:last-child) {
+         margin-bottom: rem(17);
+      }
+   }
+   // .card__button
+   &__button {
+      height: rem(27);
+      font-size: rem(14);
+      font-weight: 700;
+      width: 100%;
+   }
+}
+
+.arrows {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   pointer-events: none;
+   top: 50%;
+   position: absolute;
+   left: 50%;
+   width: calc(100% + 218px);
+   transform: translate(-50%, -50%);
+   @media (max-width: em(1350)) {
+      width: calc(100% + 118px);
+   }
+   @media (max-width: em(1240)) {
+      display: none;
+   }
+   // .arrows__button
+   &__button {
+      display: inline-flex;
+      align-items: flex-end;
+      justify-content: center;
+      background: #ff0000;
+      border-radius: 5px;
+      width: rem(50);
+      height: rem(50);
+      pointer-events: all;
+
+      padding-bottom: rem(12);
+      &.swiper-button-disabled {
+         background: rgba(255, 0, 0, 0.2);
+      }
+      // .arrows__button_prev
+      &_prev {
+         img {
+            transform: rotate(180deg);
+         }
+      }
+      // .arrows__button_next
+      &_next {
+      }
+   }
+}
+
+.tippy {
+   position: absolute;
+   top: 50%;
+   width: rem(24);
+   transform: translateY(-50%);
+   right: 19px;
+   height: rem(24);
+   @media (max-width: $mobile) {
+      right: 10px;
+   }
+}

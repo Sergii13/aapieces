@@ -1,0 +1,68 @@
+.manual-top {
+   padding-top: rem(38);
+   @include adaptiveValue("padding-bottom", 70, 36);
+   @media (max-width: $mobile) {
+      padding-top: rem(16);
+   }
+   // .manual-top__container
+   &__container {
+   }
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(12);
+      }
+   }
+   // .manual-top__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(12);
+      }
+   }
+   // .manual-top__descr
+   &__descr {
+      text-align: center;
+      &:not(:last-child) {
+         margin-bottom: rem(16);
+      }
+   }
+   // .manual-top__form
+   &__form {
+   }
+   // .manual-top__form-row
+   &__form-row {
+      display: grid;
+      gap: rem(30);
+      grid-template-columns: 1fr 1fr 1fr rem(215);
+      @media (max-width: em(1050,)) {
+         gap: rem(12);
+      }
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: em(550)) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+      .select__value {
+         &::after {
+            background: url("@img/svg/arrow-red.svg") center / contain no-repeat;
+         }
+      }
+   }
+   // .manual-top__button
+   &__button {
+   }
+}
+.breadcrumb {
+   // .breadcrumb__list
+   &__list {
+   }
+   // .breadcrumb__item
+   &__item {
+   }
+   // .breadcrumb__link
+   &__link {
+   }
+   // .breadcrumb__current
+   &__current {
+   }
+}

@@ -1,0 +1,105 @@
+/*!
+ * Youtube LazyLoad 
+ * v4.0.1
+ * https://github.com/the-muda-organization/youtube-lazyload
+ * MIT License
+ */
+
+/* youtube lazyload container */
+.yt-lazyload {
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   cursor: pointer;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/* youtube lazyload container ::before --> to maintain 16/9 ratio & black bg before JS loaded */
+.yt-lazyload::before {
+   content: "";
+   width: 100%;
+   display: block;
+   position: relative;
+   background: rgba(0, 0, 0, 0.4);
+}
+
+/* youtube lazyload wrap */
+.yt-lazyload-wrap {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: inherit;
+}
+
+/* youtube lazyload content */
+.yt-lazyload-content {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   background-size: cover;
+   background-position: 50%;
+   background-repeat: no-repeat;
+}
+
+/* play-btn */
+.yt-lazyload-playbtn {
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+   height: 100%;
+   z-index: 5;
+}
+.manual-prof {
+   .yt-lazyload-playbtn {
+      background: url("@img/svg/play.svg") center / 50px 50px no-repeat;
+   }
+}
+.video-spare {
+   .yt-lazyload-playbtn {
+      background: url("@img/svg/play3.svg") center / 50px 50px no-repeat;
+   }
+}
+.help__slider {
+   .yt-lazyload-playbtn {
+      background: url("@img/svg/play2.svg") center / 60px 60px no-repeat;
+   }
+}
+/* play-btn:hover */
+.yt-lazyload-playbtn:hover {
+   opacity: 0.7;
+}
+
+/* logo */
+
+/* 0 = no logo!    */
+/* 1 = black       */
+
+/* logo:hover */
+.yt-lazyload-logo:hover {
+   opacity: 1;
+   transition: opacity 0.3s;
+}
+
+/* iframe */
+.yt-lazyload iframe {
+   width: 100% !important;
+   height: 100% !important;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 6;
+   border: 0;
+}

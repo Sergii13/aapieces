@@ -1,0 +1,114 @@
+.contact {
+   @include adaptiveValue("padding-top", 64, 35);
+   @include adaptiveValue("padding-bottom", 80, 40);
+   background: #f2f2f2;
+   // .contact__container
+   &__container {
+   }
+   // .contact__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(7);
+      }
+   }
+   // .contact__subtitle
+   &__subtitle {
+      margin: 0 auto rem(21);
+      font-size: rem(14);
+      line-height: 130%;
+      text-align: center;
+      max-width: rem(772);
+   }
+   // .contact__form
+   &__form {
+      background: #ffffff;
+      border-radius: 5px;
+      max-width: rem(607);
+      margin: 0 auto;
+      padding: rem(40);
+      @media (max-width: $mobile) {
+         padding: rem(20);
+      }
+   }
+}
+.title {
+}
+.form {
+   width: 100%;
+   // .form__items
+   &__items {
+      display: grid;
+      gap: rem(19);
+      @media (max-width: em(550)) {
+         gap: rem(11);
+      }
+   }
+   // .form__item
+   &__item {
+   }
+   // .form__row
+   &__row {
+      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+      gap: rem(20) rem(18);
+      @media (max-width: em(550)) {
+         grid-template-columns: repeat(1, 1fr);
+         gap: rem(11);
+      }
+   }
+   // .form__input-wrap
+   &__input-wrap {
+   }
+   // .form__input
+   &__input {
+   }
+   // .form__textarea
+   &__textarea {
+      min-height: rem(100);
+      padding: rem(14) rem(21);
+   }
+   // .form__count-symbol-textarea
+   &__count-symbol-textarea {
+      font-size: 14px;
+      line-height: 130%;
+      margin-top: rem(7);
+      color: #666666;
+      text-align: right;
+   }
+   // .form__info
+   &__info {
+      font-size: rem(14);
+      line-height: 130%;
+      color: #666666;
+      margin-top: rem(8);
+      @media (max-width: $mobileSmall) {
+         margin-top: rem(5);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(25);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(11);
+         }
+      }
+   }
+   // .form__bottom
+   &__bottom {
+      display: flex;
+      align-items: center;
+      gap: rem(20);
+      @media (max-width: $mobileSmall) {
+         flex-direction: column;
+         align-items: flex-start;
+         .checkbox {
+            order: -1;
+         }
+      }
+   }
+   // .form__buttonw
+   &__button {
+      width: rem(206);
+      @media (max-width: $mobileSmall) {
+         width: 100%;
+      }
+   }
+}

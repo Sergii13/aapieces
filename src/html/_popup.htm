@@ -1,0 +1,90 @@
+<div id="popup-corect" aria-hidden="true" class="popup">
+   <div class="popup__wrapper">
+      <div class="popup__content">
+         <button data-close type="button" class="popup__close">
+            <img src="@img/svg/popup-close.svg" alt="Close">
+         </button>
+         <div class="popup__title">
+
+            Сhangement d'adresse
+         </div>
+         <form action="#" class="popup__form form-popup">
+            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Entrez votre adresse"
+               class="input form-popup__input">
+            <div class="checkbox checkbox_popup">
+               <input id="c121_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+               <label for="c121_1" class="checkbox__label"><span class="checkbox__text">Définir l'adresse par
+                     défaut</span></label>
+            </div>
+            <div class="form-popup__button-wrap">
+               <button class="button form-popup__button">
+                  Sauvegarder
+               </button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+<div id="popup-add" aria-hidden="true" class="popup">
+   <div class="popup__wrapper">
+      <div class="popup__content">
+         <button data-close type="button" class="popup__close">
+            <img src="@img/svg/popup-close.svg" alt="Close">
+         </button>
+         <div class="popup__title">
+            Ajoutez l'adresse
+         </div>
+         <form action="#" class="popup__form form-popup">
+            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Entrez votre adresse"
+               class="input form-popup__input">
+            <div class="checkbox checkbox_popup">
+               <input id="c11_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+               <label for="c11_1" class="checkbox__label"><span class="checkbox__text">Définir l'adresse par
+                     défaut</span></label>
+            </div>
+            <div class="form-popup__button-wrap">
+               <button class="button form-popup__button">
+                  Sauvegarder
+               </button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+<div id="popup-add2" aria-hidden="true" class="popup">
+   <div class="popup__wrapper">
+      <div class="popup__content">
+         <button data-close type="button" class="popup__close">
+            <img src="@img/svg/popup-close.svg" alt="Close">
+         </button>
+         <div class="popup__title">
+            Ajouter une voiture
+         </div>
+         <form action="#" class="popup__form form-popup">
+            <input onchange="showPreview2(event);" class="form-profile__image-input" accept="image/*" type='file'
+               id="imgInp2" />
+            <label for="imgInp2" class="form-popup__image-ibg">
+               <img src="@img/profile/add-photo2.svg" alt="Icon" class="form-profile__image-icon">
+               <span>Sélectionnez la photo de la voiture</span>
+               <img id="file-ip-1-preview2" src="" alt="Image">
+            </label>
+            <div class="form-popup__inputs"> <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                  placeholder="Entrez Marque de machines" class="input form-popup__input">
+               <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                  placeholder="Entrez Marque de machines" class="input form-popup__input">
+               <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                  placeholder="Numéro de la voiture" class="input form-popup__input"></div>
+            <div class="checkbox checkbox_popup">
+               <input id="c111_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+               <label for="c111_1" class="checkbox__label"><span class="checkbox__text">Définir l'adresse par
+                     défaut</span></label>
+            </div>
+            <div class="form-popup__button-wrap">
+               <button class="button form-popup__button">
+                  Sauvegarder
+               </button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>

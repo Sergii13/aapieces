@@ -1,0 +1,68 @@
+.payment {
+   padding-top: rem(36);
+   @include adaptiveValue("padding-bottom", 70, 38);
+   @media (max-width: $mobile) {
+      padding-top: rem(18);
+   }
+   // .payment__container
+   &__container {
+   }
+   // .payment__breadcrumb
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(28);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(13);
+         }
+      }
+   }
+   &__subtitle {
+      font-size: rem(14);
+      line-height: 130%;
+      &:not(:last-child) {
+         margin-bottom: rem(22);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(30);
+         }
+      }
+   }
+   // .payment__descr
+   &__descr {
+   }
+   // .payment__item
+   &__item {
+      font-size: rem(14);
+      line-height: 130%;
+      &:not(:last-child) {
+         margin-bottom: rem(27);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(30);
+         }
+      }
+   }
+   // .payment__head
+   &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(20);
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(30);
+         }
+      }
+   }
+   // .payment__title
+   &__title {
+      line-height: math.div(32, 25);
+      @include adaptiveValue("font-size", 25, 18);
+      font-weight: 700;
+   }
+   // .payment__image
+   &__image {
+      @media (max-width: $mobile) {
+         display: none;
+      }
+   }
+}

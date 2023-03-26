@@ -1,0 +1,192 @@
+.somes {
+   padding-top: rem(36);
+   padding-bottom: rem(40);
+   @media (max-width: $mobile) {
+      padding-top: rem(18);
+   }
+   // .somes__container
+   &__container {
+   }
+   // .somes__breadcrumb
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(26);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(16);
+         }
+      }
+   }
+   // .somes__top
+   &__top {
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+      }
+   }
+   // .somes__bottom
+   &__bottom {
+   }
+}
+
+.top-somes {
+   // .top-somes__wrap
+   &__wrap {
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      min-height: rem(501);
+      padding: rem(17) rem(40) rem(50) rem(153);
+      @media (max-width: $mobile) {
+         padding: rem(10) rem(16) rem(40) rem(20);
+         min-height: auto;
+      }
+   }
+   // .top-somes__image-ibg
+   &__image-ibg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: url("@img/somes/decor.svg") 0 0 / cover no-repeat;
+      }
+   }
+   // .top-somes__content
+   &__content {
+      position: relative;
+      z-index: 2;
+   }
+   // .top-somes__logo
+   &__logo {
+      &:not(:last-child) {
+         margin-bottom: rem(22);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(10);
+         }
+      }
+      @media (max-width: $mobileSmall) {
+         max-width: rem(107);
+         margin: 0 auto;
+      }
+   }
+   // .top-somes__subtitle
+   &__subtitle {
+      min-height: rem(58);
+      @media (max-width: $mobile) {
+         max-width: rem(240);
+         padding-left: rem(50);
+      }
+      &::after {
+         left: -100px;
+         width: calc(100% + 120px);
+         @media (max-width: $mobile) {
+            left: 10px;
+            width: 200vw;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(19);
+      }
+   }
+   // .top-somes__text
+   &__text {
+      line-height: math.div(28, 16);
+      color: rgba(255, 255, 255, 0.5);
+      max-width: rem(335);
+      position: relative;
+      padding-bottom: rem(20);
+      &::after {
+         content: "";
+         transform: skew(-30deg);
+         height: 4px;
+         position: absolute;
+         bottom: 0;
+         left: -130px;
+         width: 600px;
+         background-color: $whiteColor;
+         @media (max-width: $mobile) {
+            display: none;
+         }
+      }
+   }
+}
+
+.bottom-somes {
+   // .bottom-somes__row
+   &__row {
+      display: flex;
+      justify-content: center;
+      gap: rem(20) rem(30);
+      @media (max-width: $mobile) {
+         flex-wrap: wrap;
+      }
+   }
+   // .bottom-somes__item
+   &__item {
+      width: rem(301);
+      padding-right: rem(80);
+      position: relative;
+      @media (max-width: $mobile) {
+         width: 43%;
+         padding-right: 0;
+      }
+      &:last-child {
+         padding-right: 0;
+      }
+
+      &:not(:last-child) {
+         &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            right: 0;
+            background: url("@img/somes/decor2.svg") 0 0 / contain no-repeat;
+            @media (max-width: $mobile) {
+               height: rem(120);
+               right: -50px;
+               display: none;
+            }
+         }
+      }
+      &:first-child {
+         @media (max-width: $mobile) {
+            &::after {
+               display: block;
+            }
+         }
+      }
+   }
+   // .bottom-somes__digit
+   &__digit {
+      font-weight: 800;
+      @include adaptiveValue("font-size", 60, 30);
+      line-height: math.div(90, 60);
+      font-family: "Poppins";
+      color: $redColor;
+      text-align: center;
+      &:not(:last-child) {
+         margin-bottom: rem(4);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(10);
+         }
+      }
+   }
+   // .bottom-somes__descr
+   &__descr {
+      font-weight: 700;
+      font-size: rem(14);
+      line-height: math.div(17, 14);
+      text-align: center;
+      @media (max-width: $mobile) {
+         font-size: rem(12);
+      }
+   }
+}

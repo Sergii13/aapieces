@@ -1,0 +1,117 @@
+.guide {
+   @include adaptiveValue("padding-top", 66, 36);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   // .guide__container
+   &__container {
+   }
+   // .guide__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(19);
+         }
+      }
+   }
+   &__grid-layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(30);
+      @media (max-width: $tablet) {
+         gap: rem(12);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: em(600)) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(23);
+         }
+      }
+   }
+   // .quide__item
+   &__item {
+   }
+   // .quide__button-wrap
+   &__button-wrap {
+      display: flex;
+      justify-content: center;
+   }
+   // .guide__button
+   &__button {
+      max-width: rem(215);
+      width: 100%;
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
+   }
+}
+
+.item-guide {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   padding: rem(20);
+   // .item-guide__top
+   &__top {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      flex: 1 1 auto;
+      padding-bottom: rem(19);
+   }
+   // .item-guide__image
+   &__image {
+      display: flex;
+      justify-content: center;
+      &:not(:last-child) {
+         margin-bottom: rem(17);
+      }
+   }
+   // .item-guide__link
+   &__link {
+      text-align: center;
+      font-weight: 700;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+      display: block;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+   }
+   // .item-guide__bottom
+   &__bottom {
+      padding-top: rem(18);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(10);
+   }
+   // .item-guide__download
+   &__download {
+      display: inline-flex;
+      align-items: center;
+      gap: rem(9);
+      font-size: rem(14);
+      line-height: 130%;
+      text-decoration: underline !important;
+      color: $redColor;
+   }
+   // .item-guide__size
+   &__size {
+      font-size: rem(14);
+      line-height: 130%;
+      color: rgba(0, 0, 0, 0.2);
+   }
+   &__icon {
+      width: rem(20);
+      height: rem(20);
+      flex-shrink: 0;
+   }
+}

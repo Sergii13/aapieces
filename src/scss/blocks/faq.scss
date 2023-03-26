@@ -1,0 +1,110 @@
+.faq {
+   @include adaptiveValue("padding-top", 74, 42);
+   @include adaptiveValue("padding-bottom", 80, 40);
+   background-color: #f2f2f2;
+   &.white {
+      background-color: $whiteColor;
+   }
+   &_small {
+      padding-bottom: 0;
+      background-color: $whiteColor;
+   }
+   // .faq__container
+   &__container {
+   }
+   &_center {
+      background-color: $whiteColor;
+      .faq__title {
+         text-transform: uppercase;
+      }
+      .faq__item {
+         background: #0d272a;
+         font-family: "Proximanova";
+      }
+      .faq__row {
+         max-width: rem(730);
+         margin: 0 auto;
+      }
+      .faq__title-spoller {
+         font-size: rem(18);
+         font-family: "Proximanova";
+         gap: rem(10);
+      }
+   }
+   // .faq__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(24);
+      }
+   }
+   // .faq__row
+   &__row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(30);
+      align-items: flex-start;
+      @media (max-width: $tablet) {
+         gap: rem(12);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   // .faq__column
+   &__column {
+      display: grid;
+      gap: rem(30);
+      font-family: "Verdana";
+      @media (max-width: $tablet) {
+         gap: rem(12);
+      }
+   }
+   &__title-spoller {
+      font-weight: 700;
+      font-size: rem(18);
+      gap: rem(40);
+      color: #fff;
+      display: flex;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      line-height: math.div(22, 18);
+      @media (max-width: $tablet) {
+         font-size: rem(16);
+         gap: rem(15);
+      }
+      &::after {
+         content: "";
+         height: rem(10);
+         width: rem(17);
+         transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+         right: 0;
+         flex-shrink: 0;
+         position: relative;
+         display: inline-block;
+         background: url("@img/center/arrow.svg") center / contain no-repeat;
+      }
+      &._spoller-active {
+         &::after {
+            transform: rotate(180deg);
+         }
+      }
+   }
+   // .faq__item
+   &__item {
+      background: #000000;
+      box-shadow: 0px 6px 26px rgba(16, 18, 43, 0.09);
+      border-radius: 4px;
+      padding: rem(20);
+   }
+   // .faq__body
+   &__body {
+      padding-top: rem(17);
+      line-height: math.div(24, 16);
+      color: rgba(255, 255, 255, 0.8);
+      @media (max-width: $tablet) {
+         font-size: rem(14);
+         padding-top: rem(10);
+      }
+   }
+}

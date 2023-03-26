@@ -1,0 +1,163 @@
+.procedure {
+   @include adaptiveValue("padding-top", 65, 36);
+   @include adaptiveValue("padding-bottom", 65, 36);
+   // .procedure__container
+   &__container {
+   }
+   // .procedure__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(12);
+      }
+   }
+   // .procedure__descr
+   &__descr {
+      max-width: rem(536);
+      margin: 0 auto rem(32);
+      font-size: rem(14);
+      line-height: 130%;
+   }
+}
+
+.procedure-spollers {
+   // .procedure-spollers__item
+   &__item {
+      color: #fff;
+      padding: 0 rem(30) rem(0) rem(20);
+      background: #000000;
+      box-shadow: 0px 6px 26px rgba(16, 18, 43, 0.09);
+      border-radius: 4px;
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(12);
+         }
+      }
+   }
+   // .procedure-spollers__title
+   &__title {
+      padding: rem(17) rem(0);
+      font-weight: 700;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      gap: rem(20);
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+      &._spoller-active {
+         &::after {
+            transform: rotate(0);
+         }
+      }
+      &::after {
+         transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+         content: "";
+         width: rem(16);
+         flex-shrink: 0;
+         transform: rotate(180deg);
+         position: relative;
+         display: inline-block;
+         background: url("@img/exchange/arrow.svg") center / contain no-repeat;
+         height: rem(10);
+      }
+   }
+   // .procedure-spollers__body
+   &__body {
+      padding-bottom: rem(15);
+   }
+   // .procedure-spollers__row
+   &__row {
+      display: grid;
+      padding-top: rem(5);
+      gap: rem(60);
+      grid-template-columns: percent(550, 1060) auto;
+      align-items: flex-start;
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(2, 1fr);
+         gap: rem(20);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(21);
+      }
+   }
+   // .procedure-spollers__content
+   &__content {
+      display: grid;
+      gap: rem(9);
+      font-size: rem(16);
+      line-height: 149.03%;
+      b {
+         font-weight: 700;
+      }
+   }
+   // .procedure-spollers__subtitle
+   &__subtitle {
+   }
+   // .procedure-spollers__images
+   &__images {
+      display: flex;
+      gap: rem(30) rem(20);
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      @media (max-width: $tablet) {
+         gap: rem(17) rem(11);
+      }
+   }
+   // .procedure-spollers__image
+   &__image-ibg {
+      flex: 0 0 calc(33.33% - 14px);
+
+      padding-bottom: percent(123, 454);
+      &::after {
+         content: "";
+         width: rem(24);
+         height: rem(24);
+         position: absolute;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         top: 0;
+         z-index: 2;
+         @media (max-width: $mobileSmall) {
+            width: rem(13);
+            height: rem(13);
+         }
+      }
+      img {
+         border-radius: 5px;
+         overflow: hidden;
+      }
+      &.no {
+         &::after {
+            background: url("@img/exchange/no.svg") center / contain no-repeat;
+         }
+      }
+      &.yes {
+         &::after {
+            background: url("@img/exchange/yes.svg") center / contain no-repeat;
+         }
+      }
+   }
+   // .procedure-spollers__bottom
+   &__bottom {
+      font-size: rem(16);
+      max-width: rem(550);
+      line-height: 149.03%;
+   }
+   // .procedure-spollers__bottom-title
+   &__bottom-title {
+      font-weight: 700;
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .procedure-spollers__bottom-text
+   &__bottom-text {
+   }
+}

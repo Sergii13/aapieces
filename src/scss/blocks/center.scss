@@ -1,0 +1,89 @@
+.center {
+   padding-top: rem(36);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   @media (max-width: $mobile) {
+      padding-top: rem(18);
+   }
+   // .center__container
+   &__container {
+   }
+   // .center__breadcrumb
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(13);
+      }
+   }
+   // .center__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(69);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(61);
+         }
+      }
+   }
+   // .center__grid-layout
+   &__grid-layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(78) rem(31);
+      @media (max-width: $tablet) {
+         gap: rem(66) rem(20);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: $mobileSmall) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   // .center__item
+   &__item {
+   }
+}
+
+.item-center {
+   background: #121212;
+   border-radius: 5px;
+   color: $whiteColor;
+   text-align: center;
+   padding: 0 rem(20) rem(30) rem(20);
+   @media (max-width: $mobileSmall) {
+      padding: rem(0) rem(15) rem(20);
+   }
+   // .item-center__icon
+   &__icon {
+      height: rem(91);
+      margin-top: rem(-45);
+      width: rem(64);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: rem(-45) auto 0;
+      background: url("@img/center/bg.svg") center / contain no-repeat;
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+   // .item-center__link
+   &__link {
+      font-weight: 700;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+      display: block;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .item-center__text
+   &__text {
+      font-size: rem(14);
+      line-height: 130%;
+   }
+}

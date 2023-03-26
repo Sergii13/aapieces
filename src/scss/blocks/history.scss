@@ -1,0 +1,78 @@
+.history {
+   @include adaptiveValue("padding-top", 80, 35);
+   @include adaptiveValue("padding-bottom", 80, 40);
+   // .history__container
+   &__container {
+   }
+   // .history__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(25);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(15);
+         }
+      }
+   }
+   // .history__grid-layout
+   &__grid-layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(30);
+      @media (max-width: $tablet) {
+         gap: rem(20);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: em(570)) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   // .history__item
+   &__item {
+   }
+}
+
+.item-history {
+   // .item-history__year
+   &__year {
+      background: #2e2e2e;
+      min-height: rem(78);
+      display: flex;
+      padding: rem(5) rem(20);
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins";
+      font-weight: 800;
+      @include adaptiveValue("font-size", 35, 25);
+      line-height: math.div(52, 35);
+      color: #ee1827;
+      -webkit-text-stroke: 2px #fff;
+      @media (max-width: $mobile) {
+         min-height: rem(60);
+      }
+   }
+   // .item-history__list
+   &__list {
+      padding: rem(16) rem(19) 0;
+      text-align: center;
+      font-size: rem(14);
+      line-height: 140%;
+      @media (max-width: $mobileSmall) {
+         padding: rem(16) 0 0;
+      }
+   }
+   // .item-history__list-item
+   &__list-item {
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(15);
+         }
+      }
+   }
+   &__red-text {
+      font-weight: 700;
+      color: $redColor;
+   }
+}

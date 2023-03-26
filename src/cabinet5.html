@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Cabinet_5"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="profile">
+            <div class="profile__container">
+               <div class="breadcrumb profile__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Personal account
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h1 class="title profile__title">
+                  Personal account
+               </h1>
+               <div class="profile__nav nav-profile">
+                  <select name="form[]" data-class-modif="profile" class="form js">
+                     <option data-href="#" data-asset="@img/profile/01.svg" value="1">Your profile</option>
+                     <option data-href="#" data-asset="@img/profile/02.svg" value="2">My orders</option>
+                     <option data-href="#" data-asset="@img/profile/03.svg" value="3">Wishlist</option>
+                     <option data-href="#" data-asset="@img/profile/04.svg" value="4">My addresses</option>
+                     <option data-href="#" data-asset="@img/profile/05.svg" value="5" selected>My cars</option>
+                  </select>
+                  <ul class="nav-profile__list">
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link ">
+                           Your profile
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p01"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My orders
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p02"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           Wishlist
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link ">
+                           My addresses
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p04"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My cars
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p05 active"></use>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="profile__adress adress-profile">
+                  <form action="#" class="adress-profile__form">
+                     <div class="add-car">
+                        <span class="add-car__label">
+                           Défaut
+                        </span>
+                        <button class="add-car__remove">
+                           <img src="@img/svg/remove.svg" alt="Icon">
+                        </button>
+                        <div class="add-car__row">
+                           <div class="add-car__left">
+                              <div class="add-car__image">
+                                 <img src="@img/profile/car.png" alt="Image">
+                              </div>
+                              <span class="add-car__name">
+                                 Tesla 54UI23
+                              </span>
+                           </div>
+                           <div class="add-car__right">
+                              <div class="form-top__item">
+                                 <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="AB-123-CD" class="input form-top__input">
+                                 <span class="form-top__label">
+                                    <img src="@img/top/eu.svg" alt="Icon">
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adress-profile__button-wrap"> <button data-popup="#popup-add2"
+                           class="adress-profile__button button button_border">
+                           <img src="@img/profile/plus.svg" alt="Icon">
+                           Add car
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+.return {
+   padding-top: rem(36);
+   @media (max-width: $mobile) {
+      padding-top: rem(18);
+   }
+   // .return__top
+   &__top {
+      @include adaptiveValue("padding-bottom", 70, 36);
+   }
+   // .return__container
+   &__container {
+   }
+   // .return__breadcrumb
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(13);
+      }
+   }
+   // .return__title
+   &__title {
+      position: relative;
+      padding-bottom: rem(23);
+      @media (max-width: $mobile) {
+         padding-bottom: rem(15);
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 48.11%, rgba(0, 0, 0, 0) 93.45%);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(25);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(15);
+         }
+      }
+   }
+   // .return__content
+   &__content {
+   }
+   // .return__title2
+   &__title2 {
+      &:not(:last-child) {
+         margin-bottom: rem(11);
+      }
+   }
+   // .return__descr
+   &__descr {
+      font-size: rem(14);
+      line-height: 130%;
+      &:not(:last-child) {
+         margin-bottom: rem(12);
+      }
+   }
+
+   // .return__items
+   &__items {
+      display: grid;
+      gap: rem(11);
+   }
+   // .return__item
+   &__item {
+   }
+   // .return__subtitle
+   &__subtitle {
+      font-weight: 600;
+      font-size: rem(20);
+      line-height: math.div(26, 20);
+      &:not(:last-child) {
+         margin-bottom: rem(7);
+      }
+   }
+   // .return__text
+   &__text {
+      font-size: rem(14);
+      line-height: 130%;
+   }
+   // .return__bottom
+   &__bottom {
+      background: #f2f2f2;
+      padding: rem(60) 0;
+      @media (max-width: $mobile) {
+         padding: rem(40) 0;
+      }
+   }
+   // .return__form
+   &__form {
+   }
+}
+
+.form-return {
+   padding: rem(30);
+   background: $whiteColor;
+   @media (max-width: $tablet) {
+      padding: rem(20);
+   }
+   // .form-return__row
+   &__row {
+      display: grid;
+      grid-template-columns: auto auto rem(215);
+      gap: rem(20);
+      @media (max-width: em(1150)) {
+         grid-template-columns: auto rem(260) rem(215);
+      }
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   // .form-return__item
+   &__item {
+      position: relative;
+      input {
+         padding-right: rem(45);
+      }
+      textarea {
+         height: auto;
+         min-height: rem(47);
+         padding-right: rem(45);
+         padding-top: rem(9);
+      }
+   }
+   // .form-return__button
+   &__button {
+   }
+}

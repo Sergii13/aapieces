@@ -1,0 +1,74 @@
+.install {
+   @include adaptiveValue("padding-top", 70, 40);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   background: #121212;
+   // .install__container
+   &__container {
+   }
+   // .install__row
+   &__row {
+      max-width: rem(863);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: rem(20);
+      align-items: flex-start;
+      @media (max-width: $mobile) {
+         display: block;
+      }
+   }
+   // .install__image
+   &__image {
+      max-width: rem(201);
+      flex-shrink: 0;
+      @media (max-width: $mobile) {
+         margin: 0 auto rem(16);
+      }
+   }
+   // .install__content
+   &__content {
+      max-width: rem(581);
+      @media (max-width: $mobile) {
+         max-width: 100%;
+         text-align: center;
+      }
+   }
+   // .install__title
+   &__title {
+      text-align: left;
+      color: #fff;
+      @media (max-width: $mobile) {
+         text-align: center;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(11);
+      }
+   }
+   // .install__descr
+   &__descr {
+      line-height: 130%;
+      color: rgba(255, 255, 255, 0.5);
+      &:not(:last-child) {
+         margin-bottom: rem(11);
+      }
+   }
+   // .install__flex
+   &__flex {
+      display: flex;
+      gap: rem(32);
+   }
+   // .install__qr
+   &__qr {
+      width: rem(101);
+      height: rem(101);
+      flex-shrink: 0;
+   }
+   // .install__links
+   &__links {
+      display: grid;
+      gap: rem(8);
+   }
+   // .install__link
+   &__link {
+   }
+}

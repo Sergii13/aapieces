@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Nous contacter"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="contact2">
+            <div class="contact2__top">
+               <div class="contact2__container">
+                  <div class="breadcrumb contact2__breadcrumb">
+                     <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                           <a href="" class="breadcrumb__link">
+                              Maison
+                           </a>
+                        </li>
+                        <li class="breadcrumb__item">
+                           <span class="breadcrumb__current">
+                              Nous contacter
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <h1 class="title contact2__title">
+                     Nous contacter
+                  </h1>
+                  <div class="contact2__descr">
+                     Vous garantir le meilleur service, c’est la priorité de AUTODOC AG. C’est pourquoi notre service
+                     client met en place une stratégie opérationnelle qui répond aux besoins de nos clients.
+                     Appelez-nous
+                     ou contactez-nous par courrier électronique et bénéficiez des compétences de notre équipe.
+                  </div>
+                  <div class="mentions__row contact2__row">
+                     <div class="mentions__item item-mentions">
+                        <span class="item-mentions__icon">
+                           <img src="@img/svg/phone.svg" alt="Icon">
+                        </span>
+                        <a href="tel:+33977555203" class="item-mentions__link">
+                           +33 (977) 55-52-03
+                        </a>
+                     </div>
+                     <div class="mentions__item item-mentions">
+                        <span class="item-mentions__icon">
+                           <img src="@img/svg/fax.svg" alt="Icon">
+                        </span>
+                        <a href="tel:+4930208478250" class="item-mentions__link">
+                           +49 (30) 208-478-250
+                        </a>
+                     </div>
+                     <div class="mentions__item item-mentions">
+                        <span class="item-mentions__icon">
+                           <img src="@img/svg/mail.svg" alt="Icon">
+                        </span>
+                        <a href="mailto:info@auto.car" class="item-mentions__link">
+                           info@auto.car
+                        </a>
+                     </div>
+                     <div class="mentions__item item-mentions">
+                        <span class="item-mentions__icon">
+                           <img src="@img/svg/location.svg" alt="Icon">
+                        </span>
+                        <a href="" class="item-mentions__link">
+                           Josef-Orlopp-Straße 55
+                           10365 Berlin
+                           , Allemagne
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="contact2__bottom">
+               <div class="contact2__container">
+                  <h2 class="contact2__title2 title">Pour accélérer le traitement de votre demande, veuillez remplir le
+                     formulaire.</h2>
+                  <div data-tabs class="contact2-tabs contact2__tabs">
+                     <nav data-tabs-titles class="contact2-tabs__navigation">
+                        <button type="submit" class="contact2-tabs__title _tab-active">Je n'ai pas encore passé de
+                           commande</button>
+                        <button type="submit" class="contact2-tabs__title">Je n'ai pas encore passé de commande</button>
+                     </nav>
+                     <div data-tabs-body class="contact2-tabs__content">
+                        <div class="contact2-tabs__body">
+                           <form action="#" class="contact2-tabs__form">
+                              <div class="contact2-form__content">
+                                 <div class="contact2-form__row">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Adresse e-mail" class="input">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Prénom" class="input">
+                                 </div>
+                                 <div class="contact2-form__tippy-item">
+                                    <textarea data-autoheight class="contact2-form__textarea input" rows="2"
+                                       autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Veuillez saisir votre numéro VIN afin que nous puissions traiter votre demande plus rapidement "
+                                       class="input form-product__input"></textarea>
+                                    <span data-tippy-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis
+                                    repellat iusto? Consectetur itaque aliquid possimus reiciendis! Ad quae beatae itaque
+                                    fugit? Tempore, dolore magnam maxime quia quasi quidem sed." class="tippy">
+                                       <img src="@img/payment/tippy.svg" alt="Icon">
+                                    </span>
+                                 </div>
+                                 <div class="checkbox contact2-form__checkbox">
+                                    <input id="c22_11" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                       value="1" name="form[]">
+                                    <label for="c22_11" class="checkbox__label"><span class="checkbox__text">
+                                          <span>Je ne connais pas mon numéro VIN</span>
+                                       </span></label>
+                                 </div>
+                                 <div class="contact2-form__row">
+                                    <div class="select select_form">
+                                       <select>
+                                          <option value="" selected>Indiquez la raison de votre demande</option>
+                                          <option value="2">Punkt №2</option>
+                                          <option value="3">Punkt №3</option>
+                                          <option value="4">Punkt №4</option>
+                                       </select>
+                                    </div>
+                                    <textarea data-autoheight class="contact2-form__textarea input" rows="2"
+                                       autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Saisissez la référence de la pièce dont vous souhaitez vérifier"
+                                       class="input form-product__input"></textarea>
+                                 </div>
+                                 <div class="checkbox contact2-form__checkbox">
+                                    <input id="c22_111" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                       value="1" name="form[]">
+                                    <label for="c22_111" class="checkbox__label"><span class="checkbox__text">
+                                          <span>Oui, je souhaite recevoir la newsletter personnalisée d'AUTODOC avec des
+                                             informations sur les produits et les offres spéci... Plus
+                                          </span>
+                                          <span> Je confirme avoir lu et accepté la présente politique de
+                                             confidentialité</span>
+                                       </span>
+                                    </label>
+                                 </div>
+                                 <textarea data-autoheight class="contact2-form__textarea-big input" autocomplete="off"
+                                    type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Veuillez décrire brièvement le problème"
+                                    class="input form-product__input"></textarea>
+                                 <button class="button contact2-form__button">
+                                    Vers la section
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="contact2-tabs__body">
+                           <form action="#" class="contact2-tabs__form">
+                              <div class="contact2-form__content">
+                                 <div class="contact2-form__row">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Adresse e-mail" class="input">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Prénom" class="input">
+                                 </div>
+                                 <div class="contact2-form__tippy-item">
+                                    <textarea class="contact2-form__textarea input" rows="2" autocomplete="off"
+                                       type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Veuillez saisir votre numéro VIN afin que nous puissions traiter votre demande plus rapidement "
+                                       class="input form-product__input"></textarea>
+                                    <span data-tippy-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis
+                                    repellat iusto? Consectetur itaque aliquid possimus reiciendis! Ad quae beatae itaque
+                                    fugit? Tempore, dolore magnam maxime quia quasi quidem sed." class="tippy">
+                                       <img src="@img/payment/tippy.svg" alt="Icon">
+                                    </span>
+                                 </div>
+                                 <div class="checkbox contact2-form__checkbox">
+                                    <input id="c22_11" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                       value="1" name="form[]">
+                                    <label for="c22_11" class="checkbox__label"><span class="checkbox__text">
+                                          <span>Je ne connais pas mon numéro VIN</span>
+                                       </span></label>
+                                 </div>
+                                 <div class="contact2-form__row">
+                                    <select data-class-modif="form" name="form[]" class="form">
+                                       <option value="" selected>Indiquez la raison de votre demande</option>
+                                       <option value="2">Punkt №2</option>
+                                       <option value="3">Punkt №3</option>
+                                       <option value="4">Punkt №4</option>
+                                    </select>
+                                    <textarea class="contact2-form__textarea input" rows="2" autocomplete="off"
+                                       type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Saisissez la référence de la pièce dont vous souhaitez vérifier"
+                                       class="input form-product__input"></textarea>
+                                 </div>
+                                 <div class="checkbox contact2-form__checkbox">
+                                    <input id="c22_111" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                       value="1" name="form[]">
+                                    <label for="c22_111" class="checkbox__label"><span class="checkbox__text">
+                                          <span>Oui, je souhaite recevoir la newsletter personnalisée d'AUTODOC avec des
+                                             informations sur les produits et les offres spéci... Plus
+                                          </span>
+                                          <span> Je confirme avoir lu et accepté la présente politique de
+                                             confidentialité</span>
+                                       </span>
+                                    </label>
+                                 </div>
+                                 <textarea class="contact2-form__textarea-big input" autocomplete="off" type="text"
+                                    name="form[]" data-error="Ошибка"
+                                    placeholder="Veuillez décrire brièvement le problème"
+                                    class="input form-product__input"></textarea> <button
+                                    class="button contact2-form__button">
+                                    Vers la section
+                                 </button>
+                              </div>
+
+                           </form>
+                        </div>
+
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </section>
+         <div class="store">
+            <div class="store__container">
+               <div class="store__row">
+                  <div class="store__image"><img src="@img/store/phone.png" alt="Icon"></div>
+                  <div class="store__info">
+                     Acheter à travers l'appli est toujours moins cher que sur le site web
+                  </div>
+                  <div class="store__column">
+                     <div class="store__qr">
+                        <img src="@img/store/qr.png" alt="Qr">
+                     </div>
+                     <div class="store__buttons">
+                        <a href="" class="store__button">
+                           <img src="@img/store/button1.png" alt="Button">
+                        </a>
+                        <a href="" class="store__button">
+                           <img src="@img/store/button2.png" alt="Button">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <section class="social">
+            <div class="social__container">
+               <h2 class="title social__title">
+                  RÉPARER SA VOITURE N'A JAMAIS ÉTÉ AUSSI SIMPLE
+               </h2>
+               <div class="social__descr">
+                  Finis les instructions compliquées et les schémas déroutants. Suivez les tutoriels pratiques et
+                  simples d'AUTODOC pour réparer votre voiture
+               </div>
+               <div class="social__slider swiper">
+                  <div class="social__wrapper swiper-wrapper">
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/01.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo1.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social2.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Leçons vidéo de nos experts : toutes les informations nécessaires pour réparer votre
+                                 voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo2.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social3.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Suivez les tendances et l'actualité et profitez de conseils et articles sur les
+                                 voitures.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo3.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pagination social__pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

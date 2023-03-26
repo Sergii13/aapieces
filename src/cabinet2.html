@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Cabinet_2"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="profile">
+            <div class="profile__container">
+               <div class="breadcrumb profile__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Personal account
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h1 class="title profile__title">
+                  Personal account
+               </h1>
+               <div class="profile__nav nav-profile">
+                  <select name="form[]" data-class-modif="profile" class="form js">
+                     <option data-href="#" data-asset="@img/profile/01.svg" value="1">Your profile</option>
+                     <option data-href="#" data-asset="@img/profile/02.svg" value="2" selected>My orders</option>
+                     <option data-href="#" data-asset="@img/profile/03.svg" value="3">Wishlist</option>
+                     <option data-href="#" data-asset="@img/profile/04.svg" value="4">My addresses</option>
+                     <option data-href="#" data-asset="@img/profile/05.svg" value="5">My cars</option>
+                  </select>
+                  <ul class="nav-profile__list">
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link ">
+                           Your profile
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p01"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link active">
+                           My orders
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p02"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           Wishlist
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My addresses
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p04"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My cars
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p05"></use>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="profile__order order-profile">
+                  <div class="order-profile__items">
+                     <div class="order-profile__item order-item">
+                        <button class="order-item__delete">
+                           <img src="@img/svg/remove.svg" alt="delete">
+                        </button>
+                        <div class="order-item__row">
+                           <div class="order-item__left">
+                              <a href="" class="order-item__image">
+                                 <img src="@img/profile/order.png" alt="Image">
+                              </a>
+                              <div class="order-item__info">
+                                 <a href="" class="order-item__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="order-item__table">
+                                    <div class="order-item__column">
+                                       <ul>
+                                          <li>
+                                             <b>№:</b> 14522638
+                                          </li>
+                                          <li>
+                                             <b> Réf.:</b> 402B0336
+                                          </li>
+                                          <li>
+                                             <b>Date: </b>27.01.2022
+                                          </li>
+                                          <li>
+                                             <b> Adresse:</b> Street-5, ap 15
+                                          </li>
+                                          <li>
+                                             <b>List products:</b> 14522638
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="order-item__column">
+                                       <ul>
+                                          <li>
+                                             <b> Mode de paiement:</b> Online paiment
+                                          </li>
+                                          <li>
+                                             <b> Amount:</b> <b>1</b>
+                                          </li>
+                                          <li>
+                                             <b>Status: </b> <b class="red">Pending</b>
+                                          </li>
+                                          <li>
+                                             <b>Adresse de livraison:</b> Street-5, ap 15
+                                          </li>
+                                          <li>
+                                             <b> Numéro de colis:</b> 14522638
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="order-item__price">
+                              23,75 €
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="order-profile__item order-item">
+                        <button class="order-item__delete">
+                           <img src="@img/svg/remove.svg" alt="delete">
+                        </button>
+                        <div class="order-item__row">
+                           <div class="order-item__left">
+                              <a href="" class="order-item__image">
+                                 <img src="@img/profile/order.png" alt="Image">
+                              </a>
+                              <div class="order-item__info">
+                                 <a href="" class="order-item__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="order-item__table">
+                                    <div class="order-item__column">
+                                       <ul>
+                                          <li>
+                                             <b>№:</b> 14522638
+                                          </li>
+                                          <li>
+                                             <b> Réf.:</b> 402B0336
+                                          </li>
+                                          <li>
+                                             <b>Date: </b>27.01.2022
+                                          </li>
+                                          <li>
+                                             <b> Adresse:</b> Street-5, ap 15
+                                          </li>
+                                          <li>
+                                             <b>List products:</b> 14522638
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="order-item__column">
+                                       <ul>
+                                          <li>
+                                             <b> Mode de paiement:</b> Online paiment
+                                          </li>
+                                          <li>
+                                             <b> Amount:</b> <b>1</b>
+                                          </li>
+                                          <li>
+                                             <b>Status: </b> <b class="red">Pending</b>
+                                          </li>
+                                          <li>
+                                             <b>Adresse de livraison:</b> Street-5, ap 15
+                                          </li>
+                                          <li>
+                                             <b> Numéro de colis:</b> 14522638
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="order-item__price">
+                              23,75 €
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="order-profile__item order-item">
+                        <button class="order-item__delete">
+                           <img src="@img/svg/remove.svg" alt="delete">
+                        </button>
+                        <div class="order-item__row">
+                           <div class="order-item__left">
+                              <a href="" class="order-item__image">
+                                 <img src="@img/profile/order.png" alt="Image">
+                              </a>
+                              <div class="order-item__info">
+                                 <a href="" class="order-item__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="order-item__table">
+                                    <div class="order-item__column">
+                                       <ul>
+                                          <li>
+                                             <b>№:</b> 14522638
+                                          </li>
+                                          <li>
+                                             <b> Réf.:</b> 402B0336
+                                          </li>
+                                          <li>
+                                             <b>Date: </b>27.01.2022
+                                          </li>
+                                          <li>
+                                             <b> Adresse:</b> Street-5, ap 15
+                                          </li>
+                                          <li>
+                                             <b>List products:</b> 14522638
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="order-item__column">
+                                       <ul>
+                                          <li>
+                                             <b> Mode de paiement:</b> Online paiment
+                                          </li>
+                                          <li>
+                                             <b> Amount:</b> <b>1</b>
+                                          </li>
+                                          <li>
+                                             <b>Status: </b> <b class="red">Pending</b>
+                                          </li>
+                                          <li>
+                                             <b>Adresse de livraison:</b> Street-5, ap 15
+                                          </li>
+                                          <li>
+                                             <b> Numéro de colis:</b> 14522638
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="order-item__price">
+                              23,75 €
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

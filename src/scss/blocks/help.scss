@@ -1,0 +1,82 @@
+.help {
+   background: #f2f2f2;
+   @include adaptiveValue("padding-top", 65, 36);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   // .help__container
+   &__container {
+   }
+   // .help__title
+   &__title {
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: rem(23);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(15);
+         }
+      }
+   }
+   // .help__slider-wrap
+   &__slider-wrap {
+      position: relative;
+   }
+   // .help__slider
+   &__slider {
+      @media (max-width: $mobile) {
+         overflow: visible !important;
+      }
+   }
+   // .help__wrapper
+   &__wrapper {
+      &:not(:last-child) {
+         margin-bottom: rem(32);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(18);
+         }
+      }
+   }
+   // .help__slide
+   &__slide {
+   }
+   // .help__card
+   &__card {
+   }
+   // .help__pagination
+   &__pagination {
+   }
+   // .help__arrows
+   &__arrows {
+      position: absolute;
+      top: 70px;
+      transform: translate(-50%, 0);
+   }
+   // .help__prev
+   &__prev {
+   }
+   // .help__next
+   &__next {
+   }
+}
+
+.card-help {
+   // .card-help__video-ibg
+   &__video-ibg {
+      height: rem(198);
+      &:not(:last-child) {
+         margin-bottom: rem(13);
+      }
+   }
+   // .card-help__link
+   &__link {
+      text-align: center;
+      font-weight: 700;
+      font-size: rem(14);
+      line-height: math.div(17, 14);
+      display: block;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+   }
+}

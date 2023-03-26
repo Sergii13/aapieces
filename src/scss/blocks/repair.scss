@@ -1,0 +1,84 @@
+.repair {
+   @include adaptiveValue("padding-top", 63, 36);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   background: #f2f2f2;
+   // .repair__container
+   &__container {
+   }
+   // .repair__title
+   &__title {
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 53, 15);
+      }
+   }
+   // .repair__grid-layout
+   &__grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: rem(30);
+      @media (max-width: $tablet) {
+         gap: rem(24);
+      }
+      @media (max-width: $mobileSmall) {
+         grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(37);
+         @media (max-width: $mobile) {
+            &:not(:last-child) {
+               margin-bottom: rem(28);
+            }
+         }
+      }
+   }
+   // .repair__item
+   &__item {
+      background: #ffffff;
+      border-radius: 5px;
+      height: rem(160);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: rem(14);
+      @media (max-width: $mobileSmall) {
+         height: rem(133);
+      }
+   }
+   // .repair__item-img-ibg
+   &__item-img-ibg {
+      img {
+         position: relative;
+         object-fit: contain;
+         max-height: 100%;
+      }
+   }
+   // .repair__button-wrap
+   &__button-wrap {
+      display: flex;
+      justify-content: center;
+   }
+   // .repair__all-btn
+   &__all-btn {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: rem(14);
+      color: $redColor;
+      line-height: 130%;
+      gap: rem(7);
+      @media (any-hover: hover) {
+         &:hover {
+            .repair__icon {
+               transform: translateY(4px);
+            }
+         }
+      }
+   }
+   // .repair__icon
+   &__icon {
+      width: rem(12);
+      height: rem(12);
+      flex-shrink: 0;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+   }
+}

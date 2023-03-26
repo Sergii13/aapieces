@@ -1,0 +1,100 @@
+.manual-prof {
+   @include adaptiveValue("padding-bottom", 72, 40);
+   // .manual-prof__container
+   &__container {
+   }
+   // .manual-prof__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(18);
+      }
+   }
+   // .manual-prof__video-ibg
+   &__video-ibg {
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 0 auto;
+      max-width: rem(790);
+      padding-bottom: percent(355, 1110);
+      @media (max-width: em(1110)) {
+         padding-bottom: percent(130, 290);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(70);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(40);
+         }
+      }
+   }
+   // .manual-prof__bottom
+   &__bottom {
+      padding-top: rem(30);
+      position: relative;
+      @media (max-width: $mobile) {
+         padding-top: rem(40);
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 1px;
+         width: 100%;
+         background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 48.11%, rgba(0, 0, 0, 0) 93.45%);
+      }
+   }
+   // .manual-prof__row
+   &__row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(56);
+      @media (max-width: $tablet) {
+         gap: rem(15);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: em(600)) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   // .manual-prof__item
+   &__item {
+   }
+}
+
+.item-prof {
+   // .item-prof__icon
+   &__icon {
+      border: 1px solid #ff0000;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: rem(60);
+      width: rem(60);
+      &:not(:last-child) {
+         margin-bottom: rem(17);
+      }
+   }
+   // .item-prof__content
+   &__content {
+      text-align: center;
+   }
+   // .item-prof__title
+   &__title {
+      font-weight: 700;
+      font-size: rem(14);
+      line-height: math.div(17, 14);
+      &:not(:last-child) {
+         margin-bottom: rem(6);
+      }
+   }
+   // .item-prof__text
+   &__text {
+      font-size: rem(14);
+      line-height: 130%;
+      color: rgba(0, 0, 0, 0.5);
+   }
+}

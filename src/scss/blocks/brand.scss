@@ -1,0 +1,30 @@
+.brand {
+   @include adaptiveValue("padding-top", 60, 37);
+   @include adaptiveValue("padding-bottom", 80, 33);
+   // .brand__container
+   &__container {
+   }
+   // .brand__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+   // .brand__grid-layout
+   &__grid-layout {
+      display: flex;
+      gap: rem(35);
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      @media (max-width: $mobile) {
+         gap: rem(20);
+      }
+   }
+   // .brand__item
+   &__item {
+      @media (max-width: $mobile) {
+         max-width: rem(95);
+      }
+   }
+}

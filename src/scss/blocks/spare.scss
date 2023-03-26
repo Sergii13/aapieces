@@ -1,0 +1,188 @@
+.spare {
+   padding-top: rem(36);
+   @include adaptiveValue("padding-bottom", 70, 36);
+   // .spare__container
+   &__container {
+   }
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(13);
+      }
+   }
+   // .spare__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(12);
+         }
+      }
+   }
+   // .spare__row
+   &__row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: rem(40);
+      white-space: nowrap;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+   }
+   // .spare__item
+   &__item {
+      width: rem(100);
+      height: rem(100);
+      flex-shrink: 0;
+      position: relative;
+      &:first-child {
+         margin-left: auto;
+      }
+      &:last-child {
+         margin-right: auto;
+      }
+      &:not(:last-child) {
+         &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -20px;
+            height: rem(83);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 48.11%, rgba(0, 0, 0, 0) 93.45%);
+         }
+      }
+   }
+   // .spare__button-all
+   &__button-all {
+      max-width: rem(290);
+      display: flex;
+      margin: 0 auto;
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
+   }
+}
+.spare-type {
+   @include adaptiveValue("padding-top", 68, 54);
+   @include adaptiveValue("padding-bottom", 72, 40);
+   background: #f2f2f2;
+   // .spare-type__container
+   &__container {
+   }
+   // .spare-type__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(25);
+      }
+   }
+   // .spare-type__grid-layout
+   &__grid-layout {
+      display: grid;
+      gap: rem(32) rem(20);
+      grid-template-columns: repeat(6, 1fr);
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+      }
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(4, 1fr);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: $mobileSmall) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+   // .spare-type__item
+   &__item {
+   }
+   // .spare-type__al-button
+   &__all-button {
+      display: flex;
+      margin: 0 auto;
+      max-width: rem(281);
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
+   }
+}
+
+.item-type {
+   text-align: center;
+   @media (max-width: $mobileSmall) {
+      &:nth-child(odd) {
+         position: relative;
+         &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -10px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 48.11%, rgba(0, 0, 0, 0) 93.45%);
+         }
+      }
+   }
+   // .item-type__top
+   &__top {
+      padding-bottom: rem(10);
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: 0;
+         max-width: rem(133);
+         background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 48.11%, rgba(0, 0, 0, 0) 93.45%);
+      }
+   }
+   // .item-type__img
+   &__img {
+      height: rem(115);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   }
+   // .item-type__title
+   &__title {
+      display: block;
+      font-weight: 700;
+      font-size: rem(17);
+      line-height: math.div(21, 17);
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      height: rem(42);
+      overflow: hidden;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+   }
+   // .item-type__list
+   &__list {
+      padding-top: rem(22);
+   }
+   // .item-type__list-item
+   &__list-item {
+   }
+   // .item-type__list-link
+   &__list-link {
+      font-size: rem(14);
+      line-height: 175.8%;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+   }
+}

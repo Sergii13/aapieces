@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Éclairage pièces détachées"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="detail detail_spare">
+            <div class="detail__container">
+               <div class="breadcrumb detail__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Éclairage
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h2 class="title detail__title">
+                  Éclairage pièces détachées
+               </h2>
+               <div class="detail__row">
+                  <aside class="filter detail__filter">
+                     <button data-close-filter class="filter__close">
+                        <img src="@img/detail/open-arrow.svg" alt="Icon" class="filter__close-icon">
+                        fermer le filtre
+                     </button>
+                     <div class="top__aside aside-top">
+                        <div class="aside-top__title">
+                           SAISIE DU NUMÉRO D'IMMATRICULATION
+                        </div>
+                        <div data-tabs class="top-tabs">
+                           <nav data-tabs-titles class="top-tabs__navigation">
+                              <button type="submit" class="top-tabs__title _tab-active">
+                                 <img src="@img/top/01.svg" alt="Icon" class="top-tabs__icon">
+                                 SAISIE DU NUMÉRO 'IMMATRICULATION
+                              </button>
+                              <button type="submit" class="top-tabs__title">
+                                 <img src="@img/top/02.svg" alt="Icon" class="top-tabs__icon">
+                                 DÉMARREZ VOTRE RECHERCHE</button>
+                           </nav>
+                           <div data-tabs-body class="top-tabs__content">
+                              <div class="top-tabs__body">
+                                 <div class="top-tabs__title2">
+                                    Number car
+                                 </div>
+                                 <form action="#" class="top-tabs__form form-top">
+                                    <div class="form-top__item">
+                                       <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                          placeholder="AB-123-CD" class="input form-top__input">
+                                       <span class="form-top__label">
+                                          <img src="@img/top/eu.svg" alt="Icon">
+                                       </span>
+                                    </div>
+                                    <button class="button form-top__button">
+                                       Rechercher
+                                    </button>
+                                 </form>
+                                 <div class="top-tabs__bottom">
+                                    <span>or</span>
+                                 </div>
+                                 <a href="" class="top-tabs__link button button_border">
+                                    Démarrez votre recherche de pièces en sélectionnant une voiture
+                                 </a>
+                              </div>
+                              <div class="top-tabs__body">
+                                 <div class="top-tabs__title2">
+                                    Number car
+                                 </div>
+                                 <form data-one-select action="#" class="top-tabs__form form-top">
+                                    <div class="form-top__item">
+                                       <div class="select select_top">
+                                          <select>
+                                             <option value="" selected>Choisissez une marque</option>
+                                             <option value="2">Punkt1</option>
+                                             <option value="3">Punkt2</option>
+                                             <option value="4">Punkt3</option>
+                                          </select>
+                                       </div>
+                                       <span class="form-top__label">
+                                          1
+                                       </span>
+                                    </div>
+                                    <div class="form-top__item">
+                                       <div class="select select_top">
+                                          <select>
+                                             <option value="" selected>Choisissez une marque</option>
+                                             <option value="2">Punkt1</option>
+                                             <option value="3">Punkt2</option>
+                                             <option value="4">Punkt3</option>
+                                          </select>
+                                       </div>
+                                       <span class="form-top__label">
+                                          2
+                                       </span>
+                                    </div>
+                                    <div class="form-top__item">
+                                       <div class="select select_top">
+                                          <select>
+                                             <option value="" selected>Choisissez une marque</option>
+                                             <option value="2">Punkt1</option>
+                                             <option value="3">Punkt2</option>
+                                             <option value="4">Punkt3</option>
+                                          </select>
+                                       </div>
+                                       <span class="form-top__label">
+                                          3
+                                       </span>
+                                    </div>
+                                    <button class="button form-top__button">
+                                       Rechercher
+                                    </button>
+                                 </form>
+                                 <div class="top-tabs__bottom">
+                                    <span>or</span>
+                                 </div>
+                                 <a href="" class="top-tabs__link button button_border">
+                                    Recherche par numéro de voiture
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filter__top top-filter">
+                        <form action="#" class="top-filter__form">
+                           <div data-one-select class="top-filter__block">
+                              <h4 class="top-filter__title">
+                                 PRÉCISEZ LES <br>
+                                 INFORMATIONS DE VOTRE VÉHICULE
+                              </h4>
+                              <div class="top-filter__inner">
+                                 <div class="top-filter__item">
+                                    <span class="top-filter__digit">
+                                       1
+                                    </span>
+                                    <div class="select select_filter">
+                                       <select>
+                                          <option value="1" selected>DAF</option>
+                                          <option value="2">DAF №2</option>
+                                          <option value="3">DAF №3</option>
+                                          <option value="4">DAF №4</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="top-filter__item">
+                                    <span class="top-filter__digit">
+                                       2
+                                    </span>
+                                    <div class="select select_filter">
+                                       <select>
+                                          <option value="1" selected>Choose model</option>
+                                          <option value="2">DAF №2</option>
+                                          <option value="3">DAF №3</option>
+                                          <option value="4">DAF №4</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="top-filter__item">
+                                    <span class="top-filter__digit">
+                                       3
+                                    </span>
+                                    <div class="select select_filter">
+                                       <select>
+                                          <option value="1" selected>Choose une motorisation</option>
+                                          <option value="2">DAF №2</option>
+                                          <option value="3">DAF №3</option>
+                                          <option value="4">DAF №4</option>
+                                       </select>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                           <div data-one-select class="top-filter__block">
+                              <h4 class="top-filter__title">
+                                 INFORMATIONS ADDITIONNELLES
+                              </h4>
+                              <div class="top-filter__grid">
+                                 <div class="select select_filter">
+                                    <select>
+                                       <option value="1" selected>Annee</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select>
+                                 </div>
+                                 <div class="select select_filter">
+                                    <select>
+                                       <option value="1" selected>Carrosserie</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select>
+                                 </div>
+                                 <div class="select select_filter">
+                                    <select>
+                                       <option value="1" selected>Cylindree</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select>
+                                 </div>
+                                 <div class="select select_filter">
+                                    <select>
+                                       <option value="1" selected>PTAC</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select>
+                                 </div>
+                                 <div class="select select_filter">
+                                    <select>
+                                       <option value="1" selected>Puissance</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select>
+                                 </div>
+                                 <div class="select select_filter">
+                                    <select>
+                                       <option value="1" selected>Essieux</option>
+                                       <option value="2">DAF №2</option>
+                                       <option value="3">DAF №3</option>
+                                       <option value="4">DAF №4</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <button class="button top-filter__button">
+                              Rechercher
+                           </button>
+                        </form>
+                     </div>
+                     <div class="filter__items">
+                        <ul class="filter__list">
+                           <li>
+                              <a href="">
+                                 <img src="@img/spare2/filter01.png" alt="">
+                                 Huiles et fluides
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <img src="@img/spare2/filter02.png" alt="">
+                                 Cabine du conducteur/ carrosserie
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <img src="@img/spare2/filter03.png" alt="">
+                                 Moteur
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <img src="@img/spare2/filter04.png" alt="">
+                                 Moteur
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </aside>
+                  <div class="detail__content">
+                     <button data-filter class="detail__open-filter button">
+                        Filtre
+                     </button>
+                     <div class="spare">
+                        <div class="spare__head head-spare">
+                           <div class="head-spare__selects">
+                              <div class="select select_spare">
+                                 <select name="form[]" data-class-modif="spare" class="form">
+                                    <option data-asset="@img/svg/select-item.svg" value="1" selected>ÉCLAIRAGE
+                                    </option>
+                                    <option data-asset="@img/svg/select-item.svg" value="2">ÉCLAIRAGE №2</option>
+                                    <option data-asset="@img/svg/select-item.svg" value="3">ÉCLAIRAGE №3</option>
+                                    <option data-asset="@img/svg/select-item.svg" value="4">ÉCLAIRAGE №4</option>
+                                 </select>
+                              </div>
+
+                           </div>
+                           <ul class="head-spare__nav">
+                              <li>
+                                 <a href="">
+                                    CHOISISSEZ LA VOITURE
+                                 </a>
+                              </li>
+                              <li><a href="">CHOISISSEZ LE MODÈLE </a></li>
+                              <li><a href=""></a>CHOISISSEZ LE STYLE</li>
+                              <li><a href=""></a>DE CAISSE</li>
+                           </ul>
+                        </div>
+                        <div class="spare__banner banner-spare">
+                           <div class="banner-spare__row">
+                              <div class="banner-spare__left">
+                                 <a href="" class="banner-spare__link">
+                                    <img src="@img/spare2/01-small.png" alt="Icon" class="banner-spare__icon">
+                                    Phares additionnels
+                                 </a>
+                              </div>
+                              <div class="banner-spare__image">
+                                 <img src="@img/spare2/01.png" alt="Image">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="spare__brand brand-spare">
+                           <h2 class="title brand-spare__title">
+                              Réparation auto par soi-même : trucs et astuces
+                           </h2>
+                           <div class="brand-spare__row">
+                              <div class="brand-spare__item">
+                                 <img src="@img/avto/logo03.png" alt="Image">
+                              </div>
+                              <div class="brand-spare__item">
+                                 <img src="@img/avto/logo04.png" alt="Image">
+                              </div>
+                              <div class="brand-spare__item">
+                                 <img src="@img/avto/logo05.png" alt="Image">
+                              </div>
+                              <div class="brand-spare__item">
+                                 <img src="@img/avto/logo06.png" alt="Image">
+                              </div>
+                           </div>
+                           <div class="brand-spare__button-wrap">
+                              <a href="" class="brand-spare__button">
+                                 Afficher plus <img src="@img/svg/arrow-red.svg" alt="Icon" class="brand-spare__icon">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="spare__text text-spare">
+                           <div class="text-spare__block">
+                              <h3 class="text-spare__title title red">
+                                 Éclairage additionnel pièces détachées - toutes les informations importantes sur les
+                                 méthodes d'utilisation, installation, diagnostic et durée de vie
+                              </h3>
+                              <div class="text-spare__body">
+                                 <p>Le système d’éclairage comprend les lumières, les lampes, les ampoules et leurs
+                                    composants. Elles illuminent la zone à l’avant de la voiture et l’intérieur de
+                                    l’habitacle pendant la nuit ou par mauvais temps, et servent à alerter ou signaler,
+                                    par
+                                    exemple en indiquant la taille du véhicule aux autres automobilistes ou en les
+                                    alertant
+                                    de l’intention de tourner ou de changer de voie.</p>
+                              </div>
+                           </div>
+                           <div class="text-spare__block">
+                              <h3 class="text-spare__title title">
+                                 Conception d’un système d’éclairage
+                              </h3>
+                              <div class="text-spare__body">
+                                 <p>Les principaux éléments du système d’éclairage sont :
+                                 </p>
+                                 <ul>
+                                    <li>Les lumières (lampes) : elles sont constituées d’un boîtier, d’un réflecteur et
+                                       d’un
+                                       diffuseur. Il y a aussi des emplacements destinés à sécuriser et alimenter les
+                                       sources lumineuses en électricité, c'est-à-dire les ampoules. Certains types de
+                                       produits sont équipés d’un écran spécial pour former un faisceau lumineux et
+                                       d’une
+                                       lentille pour en assurer la diffusion. Les emplacements sont reliés aux contacts,
+                                       qui servent à alimenter une ampoule. Il y a des capuchons dans la partie arrière
+                                       du
+                                       boîtier de la lampe qui assurent l'accès aux composants internes de la lampe. Des
+                                       joints sont installés pour étanchéifier la liaison entre les phares avant et la
+                                       carrosserie. Certains phares avant sont conçus en un seul bloc. Ils sont
+                                       remplacés
+                                       en même temps que les sources lumineuses. Les lumières intérieures ne sont pas
+                                       équipées de réflecteurs.</li>
+                                    <li> Commutateurs. Ils sont utilisés pour allumer l'appareil d'éclairage
+                                       correspondant et
+                                       permettre la sélection de son mode de fonctionnement.</li>
+                                    <li> Interrupteurs de fin de course. Ils jouent le même rôle que les commutateurs, à
+                                       la
+                                       différence que les dispositifs sont allumés automatiquement lorsque certaines
+                                       conditions sont remplies. Ces interrupteurs sont montés sur la pédale de frein et
+                                       le
+                                       levier de vitesse pour assurer le déclenchement automatique des feux de stop et
+                                       des
+                                       feux de recul.</li>
+                                    <li> Câblage électrique. Il est utilisé pour alimenter en électricité les sources
+                                       lumineuses à partir du réseau embarqué.</li>
+                                    <li>
+                                       Relais. Ils constituent un élément important du circuit électrique. Ils sont
+                                       responsables de l’alimentation en tension de certains éléments de l’équipement.
+                                    </li>
+                                    <li> Fusibles. Ils protègent le circuit et l’équipement électrique contre les pics
+                                       de
+                                       tension.</li>
+                                    <li>
+                                       Ajusteurs. Ils peuvent être manuels ou automatiques. Ils règlent la direction et
+                                       les
+                                       zones éclairées par les phares avant en prenant en compte la charge du véhicule.
+                                    </li>
+
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="text-spare__block">
+                              <h3 class="text-spare__title title">
+                                 Conseils d’entretien
+                              </h3>
+                              <div class="text-spare__body">
+                                 <ul>
+                                    <li>Utilisez uniquement les types d’ampoules recommandées par le constructeur de la
+                                       voiture. Des composants trop puissants détruiront les parties internes de la
+                                       lampe.
+                                    </li>
+                                    <li> Assurez-vous que tous les connecteurs sont fermement fixés et que l'ampoule
+                                       s'insère bien dans la douille. Un mauvais contact peut provoquer la brûlure des
+                                       composants.</li>
+                                    <li> Ne nettoyez pas les lampes avec un chiffon sec, car elles se rayent facilement.
+                                       Éliminez toujours la poussière à l’aide d’un chiffon non-pelucheux imbibé d’eau
+                                       et de shampooing pour voiture.</li>
+                                    <li> Câblage électrique. Il est utilisé pour alimenter en électricité les sources
+                                       lumineuses à partir du réseau embarqué.</li>
+                                    <li>
+
+                                       Serrez de temps en temps les fixations pour réduire les effets des vibrations.
+                                       Si vous roulez fréquemment hors-piste, appliquez un film de protection spécial
+                                       sur les phares avant et sur les diffuseurs.
+                                    </li>
+                                    <li> Réglez les phares avant après l’installation de pneus ou de roues d’un diamètre
+                                       différent. Les phares avant sont équipés de vis de réglages spéciales à cet
+                                       effet.</li>
+                                    <li>
+                                       Polissez les phares de temps en temps pour rendre le diffuseur à nouveau clair.
+                                       Il est préférable de faire réaliser ce travail dans un garage.
+                                    </li>
+
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="text-spare__block">
+                              <h3 class="text-spare__title title">
+                                 Symptômes de dysfonctionnement
+                              </h3>
+                              <div class="text-spare__body">
+                                 <p>L’absence de réponse d’un dispositif lorsqu’il est activé est un signe évident que
+                                    le système d’éclairage est défaillant. S'il n'y a qu'une seule lampe qui ne
+                                    fonctionne pas, elle est probablement elle-même la cause du problème. Si plusieurs
+                                    lampes ne fonctionnent pas, vous devez vérifier l’interrupteur ou le fusible. Des
+                                    lampes qui scintillent ou clignotent lorsque vous passez sur un obstacle témoignent
+                                    de mauvais contacts dans le logement ou une mauvaise fixation des connecteurs. Des
+                                    lampes embuées peuvent indiquer que leurs évents sont bouchés ou qu’elles ne sont
+                                    plus étanches. Une lumière faible est souvent un signe que le réflecteur s’écaille
+                                    ou qu’il existe des rayures ou des traces de frottement sur le diffuseur.</p>
+                              </div>
+                           </div>
+                           <div class="text-spare__block">
+                              <h3 class="text-spare__title title">
+                                 Causes des dysfonctionnements
+                              </h3>
+                              <div class="text-spare__body">
+                                 <p>Les dysfonctionnements du système électrique, comme des logements ou contacts brûlés
+                                    ou un relais ou un fusible en panne, sont généralement associés à des tensions
+                                    instables dans le circuit électrique. Toutefois, un pic de tension peut aussi être
+                                    causé par un alternateur défectueux ou en tentant de démarrer la voiture avec la
+                                    batterie d’un autre véhicule lorsque le moteur tourne. De nombreuses pannes se
+                                    produisent suite à des chocs importants causés par des collisions.</p>
+                              </div>
+                           </div>
+                           <div class="text-spare__block">
+                              <h3 class="text-spare__title title">
+                                 Auto-doc.fr : uniquement des pièces automobiles de haute qualité
+                              </h3>
+                              <div class="text-spare__body">
+                                 <p>Vous pouvez toujours acheter des éléments d’éclairage à des prix intéressants sur
+                                    notre magasin en ligne. Nous organisons régulièrement des promotions. Pour en savoir
+                                    plus sur celles-ci, veuillez contacter notre service client.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="store">
+            <div class="store__container">
+               <div class="store__row">
+                  <div class="store__image"><img src="@img/store/phone.png" alt="Icon"></div>
+                  <div class="store__info">
+                     Acheter à travers l'appli est toujours moins cher que sur le site web
+                  </div>
+                  <div class="store__column">
+                     <div class="store__qr">
+                        <img src="@img/store/qr.png" alt="Qr">
+                     </div>
+                     <div class="store__buttons">
+                        <a href="" class="store__button">
+                           <img src="@img/store/button1.png" alt="Button">
+                        </a>
+                        <a href="" class="store__button">
+                           <img src="@img/store/button2.png" alt="Button">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <section class="social">
+            <div class="social__container">
+               <h2 class="title social__title">
+                  RÉPARER SA VOITURE N'A JAMAIS ÉTÉ AUSSI SIMPLE
+               </h2>
+               <div class="social__descr">
+                  Finis les instructions compliquées et les schémas déroutants. Suivez les tutoriels pratiques et
+                  simples d'AUTODOC pour réparer votre voiture
+               </div>
+               <div class="social__slider swiper">
+                  <div class="social__wrapper swiper-wrapper">
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/01.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo1.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social2.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Leçons vidéo de nos experts : toutes les informations nécessaires pour réparer votre
+                                 voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo2.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social3.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Suivez les tendances et l'actualité et profitez de conseils et articles sur les
+                                 voitures.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo3.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pagination social__pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

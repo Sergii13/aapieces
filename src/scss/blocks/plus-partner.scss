@@ -1,0 +1,31 @@
+.plus-partner {
+   @include adaptiveValue("padding-bottom", 70, 40);
+   // .plus-partner__container
+   &__container {
+   }
+   // .plus-partner__title
+   &__title {
+      max-width: rem(920);
+      margin: 0 auto;
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+   // .plus-partner__row
+   &__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: rem(35);
+      flex-wrap: wrap;
+      @media (max-width: $mobile) {
+         gap: rem(20);
+      }
+   }
+   // .plus-partner__item
+   &__item {
+      @media (max-width: $mobile) {
+         max-width: 30%;
+      }
+   }
+}

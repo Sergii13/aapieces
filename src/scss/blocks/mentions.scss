@@ -1,0 +1,195 @@
+.mentions {
+   @include adaptiveValue("padding-top", 36, 16);
+   @include adaptiveValue("padding-bottom", 64, 38);
+   // .mentions__container
+   &__container {
+   }
+   // .mentions__breadcrumb
+   &__breadcrumb {
+      &:not(:last-child) {
+         margin-bottom: rem(9);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(15);
+         }
+      }
+   }
+   // .mentions__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(29);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(15);
+         }
+      }
+   }
+   // .mentions__row
+   &__row {
+      gap: rem(30);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(2, 1fr);
+         gap: rem(20);
+      }
+      @media (max-width: $mobile) {
+         gap: rem(11);
+      }
+      @media (max-width: em(550)) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(38);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(18);
+         }
+      }
+   }
+   // .mentions__item
+   &__item {
+   }
+   // .mentions__info
+   &__info {
+   }
+}
+
+.item-mentions {
+   display: flex;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   align-items: center;
+   justify-content: center;
+   padding: rem(5) rem(10);
+   min-height: rem(60);
+   gap: rem(7);
+   // .item-mentions__icon
+   &__icon {
+      width: rem(24);
+      height: rem(24);
+      flex-shrink: 0;
+   }
+   // .item-mentions__link
+   &__link {
+      max-width: rem(166);
+      font-weight: 700;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      font-size: rem(14);
+      line-height: math.div(17, 14);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+   }
+}
+.info-mentions {
+   // .info-mentions__row
+   &__row {
+      display: grid;
+      gap: rem(30);
+      grid-template-columns: repeat(2, 1fr);
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(1, 1fr);
+         gap: rem(10);
+      }
+   }
+   &__list {
+      display: grid;
+      gap: rem(10);
+      font-size: rem(14);
+      line-height: 130%;
+
+      b {
+         font-weight: 700;
+      }
+      a {
+         font-weight: 700;
+         transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+         @media (any-hover: hover) {
+            &:hover {
+               color: $redColor;
+            }
+         }
+      }
+   }
+   // .info-mentions__column
+   &__column {
+   }
+   // .info-mentions__item
+   &__item {
+   }
+   // .info-mentions__red-text
+   &__red-text {
+      font-weight: 700;
+      color: $redColor;
+   }
+}
+.mentions-info {
+   @include adaptiveValue("padding-top", 70, 35);
+   @include adaptiveValue("padding-bottom", 70, 35);
+   // .mentions-info__container
+   &__container {
+   }
+   // .mentions-info__list
+   &__list {
+   }
+   // .mentions-info__item
+   &__item {
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 60, 21);
+      }
+   }
+   // .mentions-info__title
+   &__title {
+      text-align: left;
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .mentions-info__text
+   &__text {
+      font-size: rem(14);
+      line-height: 130%;
+   }
+}
+
+.mentions-black {
+   background: #121212;
+   color: #fff;
+   position: relative;
+   padding: rem(43) 0;
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      pointer-events: none;
+      height: 100%;
+      background: url("@img/mentions/decor.svg") 0 0 / cover no-repeat;
+      @media (max-width: em(1100)) {
+         background: url("@img/mentions/decor2.svg") 0 0 / cover no-repeat;
+      }
+   }
+   // .mentions-black__container
+   &__container {
+   }
+   // .mentions-black__text
+   &__text {
+      max-width: rem(675);
+      text-align: center;
+      font-size: rem(14);
+      line-height: 130%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+   }
+   &__logo {
+      max-width: rem(140);
+      margin: 0 auto rem(26);
+      position: relative;
+      z-index: 2;
+      @media (max-width: $tablet) {
+         margin-bottom: rem(14);
+      }
+   }
+}

@@ -1,0 +1,120 @@
+.best {
+   @include adaptiveValue("padding-top", 56, 36);
+   @include adaptiveValue("padding-bottom", 70, 40);
+   // .best__container
+   &__container {
+   }
+   // .best__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+      }
+   }
+   // .best__slider
+   &__slider {
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(30);
+         }
+      }
+      @media (max-width: $mobile) {
+         overflow: visible !important;
+      }
+   }
+   // .best__wrapper
+   &__wrapper {
+      &.swiper-wrapper {
+         @media (min-width: $mobile) {
+            display: grid;
+            gap: rem(30);
+            grid-template-columns: repeat(3, 1fr);
+         }
+         @media (max-width: $tablet) {
+            gap: rem(12);
+         }
+         @media (max-width: $mobile) {
+            gap: 0;
+         }
+      }
+   }
+   // .best__slide
+   &__slide {
+   }
+   // .best__casrd
+   &__casrd {
+   }
+   // .best__pagination
+   &__pagination {
+      margin-top: rem(20);
+      @media (min-width: $mobile) {
+         display: none;
+      }
+   }
+   // .best__button-wrap
+   &__button-wrap {
+      display: flex;
+      justify-content: center;
+   }
+   // .best__button
+   &__button {
+      width: 100%;
+      max-width: rem(215);
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
+   }
+}
+
+.card-best {
+   background: #f2f2f2;
+   border-radius: 5px;
+   padding: rem(28) rem(20) rem(15);
+   @media (max-width: $mobile) {
+      padding: rem(23) rem(17) rem(20);
+   }
+   // .card-best__image-ibg
+   &__image-ibg {
+      height: rem(174);
+      display: block;
+      border-radius: 5px;
+      overflow: hidden;
+      @media (any-hover: hover) {
+         &:hover {
+            img {
+               transform: scale(1.05);
+            }
+         }
+      }
+      img {
+         transition: all 0.5s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      }
+   }
+   // .card-best__content
+   &__content {
+      padding-top: rem(18);
+      @media (max-width: $mobile) {
+         padding-right: rem(16);
+      }
+   }
+   // .card-best__date
+   &__date {
+      font-size: rem(14);
+      color: $redColor;
+      line-height: math.div(16, 14);
+      &:not(:last-child) {
+         margin-bottom: rem(4);
+      }
+   }
+   // .card-best__descr
+   &__descr {
+      font-size: rem(14);
+      line-height: math.div(16, 14);
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+   // .card-best__link
+   &__link {
+   }
+}

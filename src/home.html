@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <div class="top">
+            <div class="top__container">
+               <div class="top__row">
+                  <div class="top__aside aside-top">
+                     <div class="aside-top__title">
+                        SAISIE DU NUMÉRO D'IMMATRICULATION
+                     </div>
+                     <div data-tabs class="top-tabs">
+                        <nav data-tabs-titles class="top-tabs__navigation">
+                           <button type="submit" class="top-tabs__title _tab-active">
+                              <img src="@img/top/01.svg" alt="Icon" class="top-tabs__icon">
+                              SAISIE DU NUMÉRO 'IMMATRICULATION
+                           </button>
+                           <button type="submit" class="top-tabs__title">
+                              <img src="@img/top/02.svg" alt="Icon" class="top-tabs__icon">
+                              DÉMARREZ VOTRE RECHERCHE</button>
+                        </nav>
+                        <div data-tabs-body class="top-tabs__content">
+                           <div class="top-tabs__body">
+                              <div class="top-tabs__title2">
+                                 Number car
+                              </div>
+                              <form action="#" class="top-tabs__form form-top">
+                                 <div class="form-top__item">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="AB-123-CD" class="input form-top__input">
+                                    <span class="form-top__label">
+                                       <img src="@img/top/eu.svg" alt="Icon">
+                                    </span>
+                                 </div>
+                                 <button class="button form-top__button">
+                                    Rechercher
+                                 </button>
+                              </form>
+                              <div class="top-tabs__bottom">
+                                 <span>or</span>
+                              </div>
+                              <a href="" class="top-tabs__link button button_border">
+                                 Démarrez votre recherche de pièces en sélectionnant une voiture
+                              </a>
+                           </div>
+                           <div class="top-tabs__body">
+                              <div class="top-tabs__title2">
+                                 Number car
+                              </div>
+                              <form data-one-select action="#" class="top-tabs__form form-top">
+                                 <div class="form-top__item">
+                                    <div class="select select_top">
+                                       <select>
+                                          <option value="" selected>Choisissez une marque</option>
+                                          <option value="2">Punkt1</option>
+                                          <option value="3">Punkt2</option>
+                                          <option value="4">Punkt3</option>
+                                       </select>
+                                    </div>
+                                    <span class="form-top__label">
+                                       1
+                                    </span>
+                                 </div>
+                                 <div class="form-top__item">
+                                    <div class="select select_top">
+                                       <select>
+                                          <option value="" selected>Choisissez une marque</option>
+                                          <option value="2">Punkt1</option>
+                                          <option value="3">Punkt2</option>
+                                          <option value="4">Punkt3</option>
+                                       </select>
+                                    </div>
+                                    <span class="form-top__label">
+                                       2
+                                    </span>
+                                 </div>
+                                 <div class="form-top__item">
+                                    <div class="select select_top">
+                                       <select>
+                                          <option value="" selected>Choisissez une marque</option>
+                                          <option value="2">Punkt1</option>
+                                          <option value="3">Punkt2</option>
+                                          <option value="4">Punkt3</option>
+                                       </select>
+                                    </div>
+                                    <span class="form-top__label">
+                                       3
+                                    </span>
+                                 </div>
+                                 <button class="button form-top__button">
+                                    Rechercher
+                                 </button>
+                              </form>
+                              <div class="top-tabs__bottom">
+                                 <span>or</span>
+                              </div>
+                              <a href="" class="top-tabs__link button button_border">
+                                 Recherche par numéro de voiture
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="top__right">
+                     <div class="top__slider swiper">
+                        <div class="top__wrapper swiper-wrapper">
+                           <div class="top__slide top-slide swiper-slide">
+                              <div class="top-slide__image-ibg">
+                                 <img src="@img/top/banner.png" alt="Image">
+                              </div>
+                              <div class="top-slide__content">
+                                 <h2 class="top-slide__label subtitle">
+                                    <span> BEST PROTECTION ON THE ROAD</span>
+                                 </h2>
+                                 <div class="top-slide__text">
+                                    <span class="top-slide__text-valute">
+                                       $
+                                    </span>
+                                    <span class="top-slide__text-digit">
+                                       250
+                                    </span>
+                                    <div class="top-slide__text-descr">
+                                       WHEELS
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="top__slide top-slide swiper-slide">
+                              <div class="top-slide__image-ibg">
+                                 <img src="@img/top/banner.png" alt="Image">
+                              </div>
+                              <div class="top-slide__content">
+                                 <h2 class="top-slide__label subtitle">
+                                    <span> BEST PROTECTION ON THE ROAD</span>
+                                 </h2>
+                                 <div class="top-slide__text">
+                                    <span class="top-slide__text-valute">
+                                       $
+                                    </span>
+                                    <span class="top-slide__text-digit">
+                                       250
+                                    </span>
+                                    <div class="top-slide__text-descr">
+                                       WHEELS
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="pagination top__pagination">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="catalog">
+            <div class="catalog__container">
+               <div data-mob-select data-tabs class="tabs-catalog catalog__tabs">
+                  <div class="tabs-catalog__select">
+                     <select name="form[]" data-class-modif="catalog" class="form">
+                        <option data-asset="@img/catalog/01.svg" value="1" selected>PIÈCES DÉTACHÉES</option>
+                        <option data-asset="@img/catalog/02.svg" value="2">CONSTRUCTEURS</option>
+                        <option data-asset="@img/catalog/03.svg" value="3">CAMIONS</option>
+                        <option data-asset="@img/catalog/04.svg" value="4">MOTO</option>
+                        <option data-asset="@img/catalog/05.svg" value="5">ACCESSOIRES</option>
+                     </select>
+                  </div>
+                  <nav data-tabs-titles class="tabs-catalog__navigation">
+                     <button type="submit" class="tabs-catalog__title _tab-active">
+                        <img src="@img/catalog/01.svg" alt="Icon" class="tabs-catalog__icon">PIÈCES DÉTACHÉES</button>
+                     <button type="submit" class="tabs-catalog__title">
+                        <img src="@img/catalog/02.svg" alt="Icon" class="tabs-catalog__icon">CONSTRUCTEURS</button>
+                     <button type="submit" class="tabs-catalog__title">
+                        <img src="@img/catalog/03.svg" alt="Icon" class="tabs-catalog__icon">CAMIONS</button> <button
+                        type="submit" class="tabs-catalog__title">
+                        <img src="@img/catalog/04.svg" alt="Icon" class="tabs-catalog__icon">MOTO</button> <button
+                        type="submit" class="tabs-catalog__title">
+                        <img src="@img/catalog/05.svg" alt="Icon" class="tabs-catalog__icon">ACCESSOIRES</button>
+                  </nav>
+                  <div data-tabs-body class="tabs-catalog__content">
+                     <div class="tabs-catalog__body">
+                        <div class="tabs-catalog__row">
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/01.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Pneus</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/02.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Freinage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/03.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Nettoyage des vitres</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/04.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Huiles et fluides</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/05.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Système d'allumage et bougies de préchauffage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/06.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Filtre</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/07.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Suspension et bras</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/08.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Carrosserie</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/09.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Moteur</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/10.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Amortissement</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/11.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Direction</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/12.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Système électrique</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="" class="button button_border tabs-catalog__all">
+                           Plus de pièces détachées
+                        </a>
+                     </div>
+                     <div class="tabs-catalog__body">
+                        <div class="tabs-catalog__row">
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/01.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Pneus</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/02.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Freinage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/03.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Nettoyage des vitres</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/04.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Huiles et fluides</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/05.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Système d'allumage et bougies de préchauffage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/06.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Filtre</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/07.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Suspension et bras</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/08.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Carrosserie</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/09.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Moteur</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/10.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Amortissement</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/11.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Direction</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/12.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Système électrique</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="" class="button button_border tabs-catalog__all">
+                           Plus de pièces détachées
+                        </a>
+                     </div>
+                     <div class="tabs-catalog__body">
+                        <div class="tabs-catalog__row">
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/01.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Pneus</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/02.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Freinage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/03.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Nettoyage des vitres</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/04.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Huiles et fluides</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/05.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Système d'allumage et bougies de préchauffage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/06.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Filtre</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/07.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Suspension et bras</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/08.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Carrosserie</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/09.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Moteur</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/10.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Amortissement</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/11.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Direction</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/12.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Système électrique</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="" class="button button_border tabs-catalog__all">
+                           Plus de pièces détachées
+                        </a>
+                     </div>
+                     <div class="tabs-catalog__body">
+                        <div class="tabs-catalog__row">
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/01.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Pneus</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/02.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Freinage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/03.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Nettoyage des vitres</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/04.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Huiles et fluides</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/05.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Système d'allumage et bougies de préchauffage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/06.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Filtre</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/07.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Suspension et bras</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/08.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Carrosserie</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/09.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Moteur</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/10.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Amortissement</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/11.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Direction</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/12.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Système électrique</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="" class="button button_border tabs-catalog__all">
+                           Plus de pièces détachées
+                        </a>
+                     </div>
+                     <div class="tabs-catalog__body">
+                        <div class="tabs-catalog__row">
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/01.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Pneus</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/02.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Freinage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/03.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Nettoyage des vitres</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/04.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Huiles et fluides</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/05.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Système d'allumage et bougies de préchauffage</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/06.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Filtre</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/07.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Suspension et bras</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/08.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Carrosserie</div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="tabs-catalog__column">
+                              <div class="tabs-catalog__grid-layout">
+                                 <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/09.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Moteur</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/10.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Amortissement</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/11.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text"> Direction</div>
+                                 </a> <a href="" class="tabs-catalog__item item-catalog">
+                                    <div class="item-catalog__image">
+                                       <img src="@img/catalog/12.png" alt="Image">
+                                    </div>
+                                    <div class="item-catalog__text">Système électrique</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="" class="button button_border tabs-catalog__all">
+                           Plus de pièces détachées
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="brand">
+            <div class="brand__container">
+               <h2 class="title brand__title"> LES PLUS GRANDES MARQUES ET LES FABRICANTS DE PIÈCES DÉTACHÉES LES PLUS
+                  CONNUS ACCESSIBLES AU MEILLEUR
+                  PRIX EN LIGNE</h2>
+               <div class="brand__grid-layout">
+                  <div class="brand__item">
+                     <img src="@img/brand/01.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/02.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/03.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/04.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/05.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/06.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/07.png" alt="Image">
+                  </div>
+                  <div class="brand__item">
+                     <img src="@img/brand/08.png" alt="Image">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="faq">
+            <div class="faq__container">
+               <h2 class="title  faq__title"> Frequently asked Questions</h2>
+               <div class="faq__row">
+                  <div data-spollers class="faq__column">
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                  </div>
+                  <div data-spollers class="faq__column">
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="store">
+            <div class="store__container">
+               <div class="store__row">
+                  <div class="store__image"><img src="@img/store/phone.png" alt="Icon"></div>
+                  <div class="store__info">
+                     Acheter à travers l'appli est toujours moins cher que sur le site web
+                  </div>
+                  <div class="store__column">
+                     <div class="store__qr">
+                        <img src="@img/store/qr.png" alt="Qr">
+                     </div>
+                     <div class="store__buttons">
+                        <a href="" class="store__button">
+                           <img src="@img/store/button1.png" alt="Button">
+                        </a>
+                        <a href="" class="store__button">
+                           <img src="@img/store/button2.png" alt="Button">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <section class="social">
+            <div class="social__container">
+               <h2 class="title social__title">
+                  RÉPARER SA VOITURE N'A JAMAIS ÉTÉ AUSSI SIMPLE
+               </h2>
+               <div class="social__descr">
+                  Finis les instructions compliquées et les schémas déroutants. Suivez les tutoriels pratiques et
+                  simples d'AUTODOC pour réparer votre voiture
+               </div>
+               <div class="social__slider swiper">
+                  <div class="social__wrapper swiper-wrapper">
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/01.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo1.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social2.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Leçons vidéo de nos experts : toutes les informations nécessaires pour réparer votre
+                                 voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo2.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social3.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Suivez les tendances et l'actualité et profitez de conseils et articles sur les
+                                 voitures.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo3.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pagination social__pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

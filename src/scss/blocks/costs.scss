@@ -1,0 +1,93 @@
+.costs {
+   padding-top: rem(62);
+   padding-bottom: rem(70);
+   // .costs__container
+   &__container {
+   }
+   // .costs__tabs
+   &__tabs {
+   }
+}
+.costs-tabs {
+   // .costs-tabs__navigation
+   &__navigation {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @media (max-width: $mobile) {
+         display: none;
+      }
+   }
+   &__select-mob {
+      @media (min-width: $mobile) {
+         display: none;
+      }
+      .select__title {
+         background-color: $redColor;
+         font-size: rem(14);
+      }
+      .select__options {
+         background-color: $redColor;
+      }
+      .select__option {
+         font-size: rem(14);
+      }
+      margin-bottom: rem(10);
+   }
+   // .costs-tabs__title
+   &__title {
+      padding: rem(15);
+      font-weight: 600;
+      font-size: rem(18);
+      line-height: 130%;
+      color: $redColor;
+      border-radius: 5px 5px 0px 0px;
+      text-align: center;
+      &._tab-active {
+         background: #ff0000;
+         color: #fff;
+      }
+   }
+   // .costs-tabs__content
+   &__content {
+   }
+   // .costs-tabs__body
+   &__body {
+      background: #f2f2f2;
+      border-radius: 0px 0px 5px 5px;
+      padding: rem(28) rem(30);
+      @media (max-width: $tablet) {
+         padding: rem(18) rem(12);
+      }
+   }
+   // .costs-tabs__row
+   &__row {
+      align-items: flex-start;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: rem(60);
+      @media (max-width: em(1100)) {
+         gap: rem(0) rem(20);
+      }
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: $mobileSmall) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+   // .costs-tabs__list
+   &__list {
+      display: grid;
+      gap: rem(7);
+      a {
+         font-size: rem(14);
+         transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+         line-height: 130%;
+         @media (any-hover: hover) {
+            &:hover {
+               color: $redColor;
+            }
+         }
+      }
+   }
+}

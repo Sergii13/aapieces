@@ -1,0 +1,86 @@
+.brands {
+   @include adaptiveValue("padding-bottom", 80, 40);
+   // .brands__grid-layout
+   &__grid-layout {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: rem(30);
+      @media (max-width: $mobile) {
+         gap: rem(20) rem(30);
+         grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: em(500)) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(20);
+         }
+      }
+   }
+   // .brands__item
+   &__item {
+   }
+   // .brands__button-wrap
+   &__button-wrap {
+      display: flex;
+      justify-content: center;
+   }
+   &__button {
+      max-width: rem(213);
+      width: 100%;
+      padding: 5px;
+      font-size: rem(12);
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
+   }
+}
+.item-brands {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: rem(17);
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   background-color: $whiteColor;
+   // .item-brands__image
+   &__image {
+      height: rem(148);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: rem(20);
+      img {
+         max-height: 100%;
+      }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      @media (max-width: $mobile) {
+         padding-bottom: rem(15);
+      }
+      @media (max-width: em(600)) {
+         height: rem(105);
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(17);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(13);
+         }
+      }
+   }
+   // .item-brands__link
+   &__link {
+      font-weight: 700;
+      text-decoration: underline !important;
+      line-height: math.div(19, 16);
+      color: $redColor;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $mainColor;
+         }
+      }
+      display: block;
+   }
+}

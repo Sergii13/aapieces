@@ -1,0 +1,116 @@
+.video-manual {
+   @include adaptiveValue("padding-top", 63, 38);
+   background: #f2f2f2;
+   @include adaptiveValue("padding-bottom", 70, 40);
+   &.white {
+      background-color: #fff;
+   }
+   // .video-manual__container
+   &__container {
+   }
+   // .video-manual__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(31);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(20);
+         }
+      }
+   }
+   // .video-manual__slider
+   &__slider {
+      @media (max-width: $mobile) {
+         overflow: visible !important;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(27);
+         @media (max-width: $mobile) {
+            margin-bottom: rem(20);
+         }
+      }
+   }
+   // .video-manual__wrapper
+   &__wrapper {
+      @media (min-width: $mobile) {
+         &.swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: rem(30);
+         }
+      }
+      @media (max-width: $tablet) {
+         gap: rem(12);
+      }
+      @media (max-width: $mobile) {
+         gap: 0;
+      }
+   }
+   // .video-manual__slide
+   &__slide {
+   }
+   // .video-manual__button-wrap
+   &__button-wrap {
+      display: flex;
+      justify-content: center;
+   }
+   // .video-manual__button
+   &__button {
+      max-width: rem(215);
+      width: 100%;
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
+   }
+}
+
+.slide-manual {
+   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+   border-radius: 5px;
+   overflow: hidden;
+   // .slide-manual__image-ibg
+   &__image-ibg {
+      height: rem(178);
+      display: block;
+      overflow: hidden;
+      @media (any-hover: hover) {
+         &:hover {
+            img {
+               transform: scale(1.05);
+            }
+         }
+      }
+      img {
+         transition: all 0.5s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      }
+   }
+   // .slide-manual__content
+   &__content {
+      background: #2e2e2e;
+      padding: rem(15) rem(15) rem(20) rem(20);
+      @media (max-width: $mobile) {
+         padding: rem(15) rem(15) rem(20) rem(10);
+      }
+   }
+   // .slide-manual__link
+   &__link {
+      color: #fff;
+      font-weight: 700;
+      font-size: rem(18);
+      line-height: math.div(22, 18);
+      display: inline-block;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $redColor;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .slide-manual__descr
+   &__descr {
+      line-height: math.div(19, 16);
+      color: rgba(255, 255, 255, 0.6);
+   }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Cabinet_4"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="profile">
+            <div class="profile__container">
+               <div class="breadcrumb profile__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           Personal account
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <h1 class="title profile__title">
+                  Personal account
+               </h1>
+               <div class="profile__nav nav-profile">
+                  <select name="form[]" data-class-modif="profile" class="form js">
+                     <option data-href="#" data-asset="@img/profile/01.svg" value="1">Your profile</option>
+                     <option data-href="#" data-asset="@img/profile/02.svg" value="2">My orders</option>
+                     <option data-href="#" data-asset="@img/profile/03.svg" value="3">Wishlist</option>
+                     <option data-href="#" data-asset="@img/profile/04.svg" value="4" selected>My addresses</option>
+                     <option data-href="#" data-asset="@img/profile/05.svg" value="5">My cars</option>
+                  </select>
+                  <ul class="nav-profile__list">
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link ">
+                           Your profile
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p01"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My orders
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p02"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           Wishlist
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link active">
+                           My addresses
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p04"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-profile__item">
+                        <a href="" class="nav-profile__link">
+                           My cars
+                           <svg class="nav-profile__icon">
+                              <use href="@img/icons/icons.svg#p05"></use>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="profile__adress adress-profile">
+                  <form action="#" class="adress-profile__form">
+                     <div class="adress-profile__row">
+                        <div class="adress-profile__item item-adress">
+                           <div class="item-adress__head"> <span class="item-adress__label">
+                                 The address 1
+                              </span>
+                              <span class="item-adress__type">
+                                 Défaut
+                              </span></div>
+
+                           <div class="item-adress__input-wrap">
+                              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                 placeholder="Street 2, apartment 14" class="input item-adress__input">
+                              <button data-popup="#popup-corect" class="item-adress__corect">
+                                 <img src="@img/svg//corect.svg" alt="Icon">
+                              </button>
+                           </div>
+
+                        </div>
+                        <div class="adress-profile__item item-adress">
+                           <div class="item-adress__head"> <span class="item-adress__label">
+                                 The address 2
+                              </span>
+                              <div class="checkbox checkbox_adress">
+                                 <input id="c_111" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                    name="form[]">
+                                 <label for="c_111" class="checkbox__label"><span class="checkbox__text">Sélectionnez
+                                       par
+                                       défaut</span></label>
+                              </div>
+                           </div>
+                           <div class="item-adress__input-wrap">
+                              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                 placeholder="Street 2, apartment 14" class="input item-adress__input">
+                              <button data-popup="#popup-corect" class="item-adress__corect">
+                                 <img src="@img/svg//corect.svg" alt="Icon">
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="adress-profile__button-wrap"> <button data-popup="#popup-add"
+                           class="adress-profile__button button button_border">
+                           <img src="@img/profile/plus.svg" alt="Icon">
+                           Add card
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

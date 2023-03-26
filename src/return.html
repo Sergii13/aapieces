@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Retour d’articler"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="return">
+            <div class="return__top">
+               <div class="return__container">
+                  <div class="breadcrumb return__breadcrumb">
+                     <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                           <a href="" class="breadcrumb__link">
+                              Maison
+                           </a>
+                        </li>
+                        <li class="breadcrumb__item">
+                           <span class="breadcrumb__current">
+                              Retour d’article
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <h1 class="title return__title">
+                     PORTAIL DE RETOURS
+                  </h1>
+                  <div class="return__content">
+                     <h2 class="title return__title2">
+                        BIENVENUE SUR NOTRE SERVICE DE RETOURS D’ARTICLES
+                     </h2>
+                     <div class="return__descr">
+                        Ici, vous pouvez organiser le retour des articles commandés de manière rapide et facile.
+                     </div>
+                     <div class="return__items">
+                        <div class="return__item">
+                           <h4 class="return__subtitle">
+                              Comment ça marche :
+                           </h4>
+                           <div class="return__text">
+                              <p> Saisissez votre code postal et votre numéro de la commande, puis choisissez les
+                                 produits que
+                                 vous souhaitez renvoyer.
+                              </p>
+                              <p> Les retours seront traités aussi rapidement que possible.</p>
+                           </div>
+                        </div>
+                        <div class="return__item">
+                           <h4 class="return__subtitle">
+                              Consignes à suivre pour le retour :
+                           </h4>
+                           <div class="return__text">
+                              <p> - Les articles endommagés ou modifiés ne seront pas acceptés.</p>
+                              <p> - Si l’emballage d’origine est endommagé, vous devrez rembourser la différence.</p>
+                           </div>
+                        </div>
+                        <div class="return__item">
+                           <h4 class="return__subtitle">
+                              Notre service clientèle se tient à votre disposition pour répondre à vos questions.
+                           </h4>
+                           <div class="return__text">
+                              <p> Contacter l’équipe d’Autodoc par voie électronique : info@auto-doc.fr Ouvert du Du
+                                 lundi au
+                                 vendredi de 8:00h à 23:00h et le samedi et le dimanche de 8:00h à 18:00h</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="return__bottom">
+               <div class="return__container">
+                  <form action="#" class="return__form form-return">
+                     <div class="form-return__row">
+                        <div class="form-return__item">
+                           <textarea autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                              placeholder="Code postal de l’adresse d’envoi de la commande"
+                              class="input form-product__input"></textarea>
+                           <span data-tippy-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis
+                              repellat iusto? Consectetur itaque aliquid possimus reiciendis! Ad quae beatae itaque
+                              fugit? Tempore, dolore magnam maxime quia quasi quidem sed." class="tippy">
+                              <img src="@img/payment/tippy.svg" alt="Icon">
+                           </span>
+                        </div>
+                        <div class="form-return__item">
+                           <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                              placeholder="Numéro de commande" class="input form-product__input">
+                           <span data-tippy-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis
+                              repellat iusto? Consectetur itaque aliquid possimus reiciendis! Ad quae beatae itaque
+                              fugit? Tempore, dolore magnam maxime quia quasi quidem sed." class="tippy">
+                              <img src="@img/payment/tippy.svg" alt="Icon">
+                           </span>
+                        </div>
+                        <button class="form-return__button button">Rechercher</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+         <div class="store">
+            <div class="store__container">
+               <div class="store__row">
+                  <div class="store__image"><img src="@img/store/phone.png" alt="Icon"></div>
+                  <div class="store__info">
+                     Acheter à travers l'appli est toujours moins cher que sur le site web
+                  </div>
+                  <div class="store__column">
+                     <div class="store__qr">
+                        <img src="@img/store/qr.png" alt="Qr">
+                     </div>
+                     <div class="store__buttons">
+                        <a href="" class="store__button">
+                           <img src="@img/store/button1.png" alt="Button">
+                        </a>
+                        <a href="" class="store__button">
+                           <img src="@img/store/button2.png" alt="Button">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <section class="social">
+            <div class="social__container">
+               <h2 class="title social__title">
+                  RÉPARER SA VOITURE N'A JAMAIS ÉTÉ AUSSI SIMPLE
+               </h2>
+               <div class="social__descr">
+                  Finis les instructions compliquées et les schémas déroutants. Suivez les tutoriels pratiques et
+                  simples d'AUTODOC pour réparer votre voiture
+               </div>
+               <div class="social__slider swiper">
+                  <div class="social__wrapper swiper-wrapper">
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/01.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo1.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social2.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Leçons vidéo de nos experts : toutes les informations nécessaires pour réparer votre
+                                 voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo2.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social3.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Suivez les tendances et l'actualité et profitez de conseils et articles sur les
+                                 voitures.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo3.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pagination social__pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

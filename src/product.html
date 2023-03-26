@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Product page"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <div data-info class="car-detail">
+            <div class="car-detail__container">
+               <div class="car-detail__head">
+                  <div class="car-detail__main">
+                     <div class="car-detail__icon">
+                        <img src="@img/detail/car.svg" alt="Icon">
+                     </div>
+                     <div class="car-detail__info">
+                        <div class="car-detail__name">
+                           BMW e60 530d 235PS
+                        </div>
+                        <div class="car-detail__descr">
+                           Serie 5 (E60 LCI) Berline 530d 3.0 d 24V 235cv Boite auto)
+                        </div>
+                     </div>
+                  </div>
+                  <div class="car-detail__buttons">
+                     <button data-info-open class="car-detail__button button button_border">
+                        Plus d`infos
+                     </button>
+                     <a href="" class="car-detail__button button ">
+                        Modifier
+                     </a>
+                     <button data-info-toggle class="car-detail__open-arrow">
+                        <img src="@img/detail/open-arrow.svg" alt="Open">
+                     </button>
+                  </div>
+               </div>
+               <div data-info-block class="car-detail__body">
+                  <div class="car-detail__row">
+                     <ul class="car-detail__list">
+                        <li class="car-detail__list-item">
+                           <b>Premiere mise en circulation:</b> 01.10.2008
+                        </li>
+                        <li class="car-detail__list-item">
+                           <b> VIN:</b> WBANX71090CS67061
+                        </li>
+                        <li class="car-detail__list-item">
+                           <b> Code moteur:</b> M57D30_306D3
+                        </li>
+                     </ul>
+                     <span class="car-detail__status">
+                        <img src="@img/svg/ok.svg" alt="Icon" class="car-detail__ok-icon"> Votre modèle de voiture
+                        est
+                        compatible
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="product">
+            <div class="product__container">
+               <div class="breadcrumb product__breadcrumb">
+                  <ul class="breadcrumb__list">
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Maison
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Pièces poids lourds
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link">
+                           Pièces détachées pour camion de la catégorie Huiles et fluides
+                        </a>
+                     </li>
+                     <li class="breadcrumb__item">
+                        <span class="breadcrumb__current">
+                           TRW PFG110 Lubrifiants
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="product__filter product-filter">
+                  <div class="product-filter__left">
+                     <div class="product-filter__top">
+                        <form data-one-select action="#" class="top-tabs__form form-top">
+                           <div class="form-top__item">
+                              <div class="select select_top"> <select>
+                                    <option value="" selected>Choisissez une marque</option>
+                                    <option value="2">Punkt1</option>
+                                    <option value="3">Punkt2</option>
+                                    <option value="4">Punkt3</option>
+                                 </select></div>
+
+                              <span class="form-top__label">
+                                 1
+                              </span>
+                           </div>
+                           <div class="form-top__item">
+                              <div class="select select_top"> <select>
+                                    <option value="" selected>Choisissez une marque</option>
+                                    <option value="2">Punkt1</option>
+                                    <option value="3">Punkt2</option>
+                                    <option value="4">Punkt3</option>
+                                 </select></div>
+                              <span class="form-top__label">
+                                 2
+                              </span>
+                           </div>
+                           <div class="form-top__item">
+                              <div class="select select_top"> <select>
+                                    <option value="" selected>Choisissez une marque</option>
+                                    <option value="2">Punkt1</option>
+                                    <option value="3">Punkt2</option>
+                                    <option value="4">Punkt3</option>
+                                 </select></div>
+                              <span class="form-top__label">
+                                 3
+                              </span>
+                           </div>
+                           <button class="button  product-filter__search">
+                              <img src="@img/svg/search.svg" alt="Icon">
+                           </button>
+                        </form>
+                     </div>
+                     <div class="product-filter__text">
+                        VOUS NE TROUVEZ PAS VOTRE VOITURE DANS LE CATALOGUE ?
+                     </div>
+                  </div>
+                  <div class="product-filter__line">
+                     <span>or</span>
+                  </div>
+                  <div class="product-filter__right">
+                     <div class="top-tabs__title2">
+                        Number car
+                     </div>
+                     <form action="#" class="top-tabs__form form-top">
+                        <div class="form-top__item">
+                           <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                              placeholder="AB-123-CD" class="input form-top__input">
+                           <span class="form-top__label">
+                              <img src="@img/top/eu.svg" alt="Icon">
+                           </span>
+                        </div>
+                        <button class="button form-top__button">
+                           Rechercher
+                        </button>
+                     </form>
+                  </div>
+               </div>
+               <div data-tabs class="top-tabs top-tabs_product">
+                  <nav data-tabs-titles class="top-tabs__navigation">
+                     <button type="submit" class="top-tabs__title _tab-active">
+                        <img src="@img/top/01.svg" alt="Icon" class="top-tabs__icon">
+                        SAISIE DU NUMÉRO 'IMMATRICULATION
+                     </button>
+                     <button type="submit" class="top-tabs__title">
+                        <img src="@img/top/02.svg" alt="Icon" class="top-tabs__icon">
+                        DÉMARREZ VOTRE RECHERCHE</button>
+                  </nav>
+                  <div data-tabs-body class="top-tabs__content">
+                     <div class="top-tabs__body">
+                        <div class="top-tabs__title2">
+                           Number car
+                        </div>
+                        <form action="#" class="top-tabs__form form-top">
+                           <div class="form-top__item">
+                              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                 placeholder="AB-123-CD" class="input form-top__input">
+                              <span class="form-top__label">
+                                 <img src="@img/top/eu.svg" alt="Icon">
+                              </span>
+                           </div>
+                           <button class="button form-top__button">
+                              Rechercher
+                           </button>
+                        </form>
+                        <div class="top-tabs__bottom">
+                           <span>or</span>
+                        </div>
+                        <a href="" class="top-tabs__link button button_border">
+                           Démarrez votre recherche de pièces en sélectionnant une voiture
+                        </a>
+                     </div>
+                     <div class="top-tabs__body">
+                        <div class="top-tabs__title2">
+                           Number car
+                        </div>
+                        <form data-one-select action="#" class="top-tabs__form form-top">
+                           <div class="form-top__item">
+                              <div class="select select_top"> <select>
+                                    <option value="" selected>Choisissez une marque</option>
+                                    <option value="2">Punkt1</option>
+                                    <option value="3">Punkt2</option>
+                                    <option value="4">Punkt3</option>
+                                 </select></div>
+                              <span class="form-top__label">
+                                 1
+                              </span>
+                           </div>
+                           <div class="form-top__item">
+                              <div class="select select_top"> <select>
+                                    <option value="" selected>Choisissez une marque</option>
+                                    <option value="2">Punkt1</option>
+                                    <option value="3">Punkt2</option>
+                                    <option value="4">Punkt3</option>
+                                 </select></div>
+                              <span class="form-top__label">
+                                 2
+                              </span>
+                           </div>
+                           <div class="form-top__item">
+                              <div class="select select_top"> <select>
+                                    <option value="" selected>Choisissez une marque</option>
+                                    <option value="2">Punkt1</option>
+                                    <option value="3">Punkt2</option>
+                                    <option value="4">Punkt3</option>
+                                 </select></div>
+                              <span class="form-top__label">
+                                 3
+                              </span>
+                           </div>
+                           <button class="button form-top__button">
+                              Rechercher
+                           </button>
+                        </form>
+                        <div class="top-tabs__bottom">
+                           <span>or</span>
+                        </div>
+                        <a href="" class="top-tabs__link button button_border">
+                           Recherche par numéro de voiture
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="product__body">
+                  <div class="product__head head-product">
+                     <h2 class="head-product__title">
+                        TRW PFG110 Lubrifiants
+                     </h2>
+                     <div class="head-product__row">
+                        <span class="head-product__descr">
+                           Réf.: PFG110
+                        </span>
+                        <span class="head-product__status">
+                           <img src="@img/svg/ok.svg" alt="Icon" class="head-product__icon">
+                           En stock
+                        </span>
+                     </div>
+                  </div>
+                  <div class="product__row">
+                     <div class="product__slider-wrap">
+                        <button class="card__heart product__heart">
+                           <svg class="card__icon">
+                              <use href="@img/icons/icons.svg#heart"></use>
+                           </svg>
+                        </button>
+                        <div class="product__slider swiper">
+                           <div data-gallery class="product__wrapper swiper-wrapper">
+                              <a href="@img/product/01.png" class="product__slide swiper-slide">
+                                 <img src="@img/product/01.png" alt="Image">
+                              </a>
+                              <a href="@img/product/01.png" class="product__slide swiper-slide">
+                                 <img src="@img/product/01.png" alt="Image">
+                              </a>
+                              <a href="@img/product/01.png" class="product__slide swiper-slide">
+                                 <img src="@img/product/01.png" alt="Image">
+                              </a>
+                              <a href="@img/product/01.png" class="product__slide swiper-slide">
+                                 <img src="@img/product/01.png" alt="Image">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="product-thumb__slider swiper">
+                           <div class="product-thumb__wrapper swiper-wrapper">
+                              <div class="product-thumb__slide swiper-slide">
+                                 <img src="@img/product/small.png" alt="Image">
+                              </div>
+                              <div class="product-thumb__slide swiper-slide">
+                                 <img src="@img/product/small.png" alt="Image">
+                              </div>
+                              <div class="product-thumb__slide swiper-slide">
+                                 <img src="@img/product/small.png" alt="Image">
+                              </div>
+                              <div class="product-thumb__slide swiper-slide">
+                                 <img src="@img/product/small.png" alt="Image">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product__aside aside-product">
+                        <div class="aside-product__head">
+                           <div class="aside-product__info">
+                              <div class="rating aside-product__rating ">
+                                 <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                       <input type="radio" class="rating__item" value="1" name="rating">
+                                       <input type="radio" class="rating__item" value="2" name="rating">
+                                       <input type="radio" class="rating__item" value="3" name="rating">
+                                       <input type="radio" class="rating__item" value="4" name="rating">
+                                       <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                 </div>
+                                 <div class="rating__value">5</div>
+                              </div>
+                              <a href="" class="aside-product__link">
+                                 Soumettre votre avis
+                              </a>
+                           </div>
+                           <div class="aside-product__logo">
+                              <img src="@img/detail/logo.png" alt="Logo">
+                           </div>
+                        </div>
+                        <div class="aside-product__table table-detail">
+                           <div class="table-detail__title">
+                              Informations sur le produit:
+                           </div>
+                           <div class="table-detail__body">
+                              <div class="table-detail__row">
+                                 <div class="table-detail__column1">
+                                    Type d'emballage:
+                                 </div>
+                                 <div class="table-detail__column2">
+                                    Tube
+                                 </div>
+                              </div>
+                              <div class="table-detail__row">
+                                 <div class="table-detail__column1">
+                                    Poids [g]:
+                                 </div>
+                                 <div class="table-detail__column2">
+                                    25
+                                 </div>
+                              </div>
+                              <div class="table-detail__row">
+                                 <div class="table-detail__column1">
+                                    Consulter données techniques
+                                 </div>
+                                 <div class="table-detail__column2">
+                                 </div>
+                              </div>
+                              <div class="table-detail__row">
+                                 <div class="table-detail__column1">
+                                    Numéro d'article
+                                 </div>
+                                 <div class="table-detail__column2">
+                                    PFG110
+                                 </div>
+                              </div>
+                              <div class="table-detail__row">
+                                 <div class="table-detail__column1">
+                                    Notre prix
+                                 </div>
+                                 <div class="table-detail__column2">
+                                    5,71 €
+                                 </div>
+                              </div>
+                              <div class="table-detail__row">
+                                 <div class="table-detail__column1">
+                                    L'état
+                                 </div>
+                                 <div class="table-detail__column2">
+                                    Neuf
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="aside-product__bottom">
+                           <div class="aside-detail__info">
+                              <div class="aside-detail__price">
+                                 23,75 €
+                              </div>
+                              <div class="aside-detail__descr">
+                                 20% de TVA inclus ,20% de TVA inclus ,
+                              </div>
+                           </div>
+                           <form action="#" class="aside-product__row">
+                              <div data-quantity class="quantity aside-detail__quantity">
+                                 <button data-quantity-minus type="button"
+                                    class="quantity__button quantity__button_minus">-</button>
+                                 <div class="quantity__input">
+                                    <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                 </div>
+                                 <button data-quantity-plus type="button"
+                                    class="quantity__button quantity__button_plus">+</button>
+                              </div>
+                              <button class="aside-product__button button">Acheter</button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-tabs data-mob-select class="product-tabs product__tabs">
+                  <div class="product__select-mob">
+                     <select name="form[]" data-class-modif="product" class="form">
+                        <option value="1" selected>NUMÉRO ОЕМ
+                        </option>
+                        <option value="2">Description du fabricant</option>
+                        <option value="3">AVIS DES CLIENTS (9)</option>
+                        <option value="4"> FAQS</option>
+                     </select>
+                  </div>
+                  <nav data-tabs-titles class="product-tabs__navigation">
+                     <button type="submit" class="product-tabs__title _tab-active">NUMÉRO ОЕМ </button>
+                     <button type="submit" class="product-tabs__title">Description du fabricant</button>
+                     <button type="submit" class="product-tabs__title">AVIS DES
+                        CLIENTS (9)</button>
+                     <button type="submit" class="product-tabs__title">FAQS</button>
+                  </nav>
+                  <div data-tabs-body class="product-tabs__content">
+                     <div class="product-tabs__body">
+                        <div class="product-car">
+                           <div class="product-car__row">
+                              <div class="product-car__column">
+                                 <div class="product-car__title">
+                                    Le(s) numéro(s) de référence OEM comparable(s) avec le numéro de la pièce originale
+                                 </div>
+                                 <div class="product-car__grid-layout">
+                                    <ul class="product-car__list">
+                                       <li>
+                                          OEN 1109.AN — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN 1109.R7 — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN E149104 — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN E149133 — CITROËN
+                                       </li>
+                                    </ul>
+                                    <ul class="product-car__list">
+                                       <li>
+                                          OEN 1109.R6 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN 1109.R7 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN E149104 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN E149133 — PEUGEOT
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="product-car__column">
+                                 <div class="product-car__title">
+                                    Сompatibilité avec les voitures personnelles
+                                 </div>
+                                 <div class="product-car__avto">
+                                    <img src="@img/product/icon.svg" alt="Icon" class="product-car__icon"> PEUGEOT 207
+                                    SW
+                                    1.6,
+                                    Année de construction 11.2008 - 10.2013, 1587 , 110 CH
+                                 </div>
+                                 <div data-one-spoller data-spollers class="product-car-spollers">
+                                    <div class="product-car-spollers__item">
+                                       <button type="button" data-spoller
+                                          class="product-car-spollers__title">MAZDA</button>
+                                       <div class="product-car-spollers__body">
+                                          <ul data-one-spoller data-spollers class="product-car-spollers__sublist">
+                                             <li class="product-car-spollers__subitem">
+                                                <button data-spoller class="product-car-spollers__subtitle">
+                                                   MAZDA Xedos 9 (TA) (Année de construction 07.1993 - 09.2002, 143 -
+                                                   211
+                                                   CH, Essence)
+                                                </button>
+                                                <ul class="product-car-spollers__last-list">
+                                                   <li>
+                                                      2.0 24V, Année de construction 08.1993 - 01.2000, 1995 ccm, 143 CH
+                                                   </li>
+                                                   <li>2.3 24V, Année de construction 02.1995 - 01.2000, 2255 ccm, 211
+                                                      CH
+                                                   </li>
+                                                   <li>2.5, Année de construction 09.2000 - 09.2002, 2496 ccm, 200 CH
+                                                   </li>
+                                                   <li>2.5 24V, Année de construction 07.1993 - 07.2000, 2497 ccm, 167
+                                                      CH
+                                                   </li>
+                                                   <li>2.5 V6, Année de construction 07.2000 - 09.2002, 2497 ccm, 163 CH
+                                                   </li>
+                                                </ul>
+                                             </li>
+                                             <li class="product-car-spollers__subitem">
+                                                <button data-spoller class="product-car-spollers__subtitle">
+                                                   MAZDA MPV II (LW) (Année de construction 09.1999 - 02.2006, 120 - 170
+                                                   CH, Diesel, Essence)
+                                                </button>
+                                                <ul class="product-car-spollers__last-list">
+                                                   <li>
+                                                      2.0, Année de construction 08.2000 - 07.2002, 1991 ccm, 120 CH
+                                                   </li>
+                                                   <li>2.0, Année de construction 09.1999 - 08.2000, 1991 ccm, 122 CH
+                                                   </li>
+                                                   <li>2.0 DI, Année de construction 07.2002 - 02.2006, 1998 ccm, 136 CH
+                                                   </li>
+                                                   <li>2.3, Année de construction 07.2002 - 02.2006, 2261 ccm, 141 CH
+                                                   </li>
+                                                   <li>2.5 V6, Année de construction 09.1999 - 03.2002, 2495 ccm, 170 CH
+                                                   </li>
+                                                </ul>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="product-car-spollers__item">
+                                       <button type="button" data-spoller
+                                          class="product-car-spollers__title">MAZDA</button>
+                                       <div class="product-car-spollers__body">
+                                          <ul data-one-spoller data-spollers class="product-car-spollers__sublist">
+                                             <li class="product-car-spollers__subitem">
+                                                <button data-spoller class="product-car-spollers__subtitle">
+                                                   MAZDA Xedos 9 (TA) (Année de construction 07.1993 - 09.2002, 143 -
+                                                   211
+                                                   CH, Essence)
+                                                </button>
+                                                <ul class="product-car-spollers__last-list">
+                                                   <li>
+                                                      2.0 24V, Année de construction 08.1993 - 01.2000, 1995 ccm, 143 CH
+                                                   </li>
+                                                   <li>2.3 24V, Année de construction 02.1995 - 01.2000, 2255 ccm, 211
+                                                      CH
+                                                   </li>
+                                                   <li>2.5, Année de construction 09.2000 - 09.2002, 2496 ccm, 200 CH
+                                                   </li>
+                                                   <li>2.5 24V, Année de construction 07.1993 - 07.2000, 2497 ccm, 167
+                                                      CH
+                                                   </li>
+                                                   <li>2.5 V6, Année de construction 07.2000 - 09.2002, 2497 ccm, 163 CH
+                                                   </li>
+                                                </ul>
+                                             </li>
+                                             <li class="product-car-spollers__subitem">
+                                                <button data-spoller class="product-car-spollers__subtitle">
+                                                   MAZDA MPV II (LW) (Année de construction 09.1999 - 02.2006, 120 - 170
+                                                   CH, Diesel, Essence)
+                                                </button>
+                                                <ul class="product-car-spollers__last-list">
+                                                   <li>
+                                                      2.0, Année de construction 08.2000 - 07.2002, 1991 ccm, 120 CH
+                                                   </li>
+                                                   <li>2.0, Année de construction 09.1999 - 08.2000, 1991 ccm, 122 CH
+                                                   </li>
+                                                   <li>2.0 DI, Année de construction 07.2002 - 02.2006, 1998 ccm, 136 CH
+                                                   </li>
+                                                   <li>2.3, Année de construction 07.2002 - 02.2006, 2261 ccm, 141 CH
+                                                   </li>
+                                                   <li>2.5 V6, Année de construction 09.1999 - 03.2002, 2495 ccm, 170 CH
+                                                   </li>
+                                                </ul>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="product-tabs__body">
+                        <div class="product-car">
+                           <div class="product-car__row">
+                              <div class="product-car__column">
+                                 <div class="product-car__title">
+                                    Le(s) numéro(s) de référence OEM comparable(s) avec le numéro de la pièce originale
+                                 </div>
+                                 <div class="product-car__grid-layout">
+                                    <ul class="product-car__list">
+                                       <li>
+                                          OEN 1109.AN — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN 1109.R7 — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN E149104 — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN E149133 — CITROËN
+                                       </li>
+                                    </ul>
+                                    <ul class="product-car__list">
+                                       <li>
+                                          OEN 1109.R6 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN 1109.R7 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN E149104 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN E149133 — PEUGEOT
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="product-car__text">
+                                    <p>Les filtres qui permettent de retenir les impuretés ferromagnétiques des fluides
+                                       qui les traversent sont appelés filtres magnétiques. Ils fonctionnent comme un
+                                       aimant, allant du positif au négatif, et viennent en complément d'un tamis pour
+                                       assurer le niveau de filtration. Les filtres à huile et filtres hydrauliques
+                                       relèvent de cette catégorie.</p>
+                                 </div>
+                              </div>
+                              <div class="product-car__column">
+                                 <div class="product-car__title">
+                                    Le(s) numéro(s) de référence OEM comparable(s) avec le numéro de la pièce originale
+                                 </div>
+                                 <div class="product-car__grid-layout">
+                                    <ul class="product-car__list">
+                                       <li>
+                                          OEN 1109.AN — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN 1109.R7 — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN E149104 — CITROËN
+                                       </li>
+                                       <li>
+                                          OEN E149133 — CITROËN
+                                       </li>
+                                    </ul>
+                                    <ul class="product-car__list">
+                                       <li>
+                                          OEN 1109.R6 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN 1109.R7 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN E149104 — PEUGEOT
+                                       </li>
+                                       <li>
+                                          OEN E149133 — PEUGEOT
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="product-car__text">
+                                    <p>Les filtres qui permettent de retenir les impuretés ferromagnétiques des fluides
+                                       qui les traversent sont appelés filtres magnétiques. Ils fonctionnent comme un
+                                       aimant, allant du positif au négatif, et viennent en complément d'un tamis pour
+                                       assurer le niveau de filtration. Les filtres à huile et filtres hydrauliques
+                                       relèvent de cette catégorie.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-tabs__body">
+                        <div class="product__review review-product">
+                           <div class="review-product__row">
+                              <div class="review-product__items">
+                                 <div class="review-product__item">
+                                    <div class="review-product__head">
+                                       <div class="review-product__name">
+                                          Petr Ivanov
+                                       </div>
+                                       <div class="review-product__date">
+                                          17/03/2022
+                                       </div>
+                                       <div class="rating review-product__rating">
+                                          <div class="rating__body">
+                                             <div class="rating__active"></div>
+                                             <div class="rating__items">
+                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                             </div>
+                                          </div>
+                                          <div class="rating__value">3.6</div>
+                                       </div>
+                                    </div>
+                                    <div class="review-product__text">
+                                       Les filtres qui permettent de retenir les impuretés ferromagnétiques des fluides
+                                       qui les traversent sont appelés filtres magnétiques. Ils fonctionnent comme un
+                                       aimant, allant du positif au négatif, et viennent en complément d'un tamis pour
+                                       assurer le niveau de filtration. Les filtres à huile et filtres hydrauliques
+                                       relèvent de cette catégorie.
+                                    </div>
+                                    <a href="" class="review-product__button button">
+                                       Laissez <br> un commentaire
+                                    </a>
+                                 </div>
+                              </div>
+                              <form action="#" class="review-product__form form-product">
+                                 <div class="form-product__head">
+                                    <div class="form-product__title">
+                                       Veuillez évaluer ce produit
+                                    </div>
+                                    <div class="rating rating_set form-product__rating">
+                                       <div class="rating__body">
+                                          <div class="rating__active"></div>
+                                          <div class="rating__items">
+                                             <input type="radio" class="rating__item" value="1" name="rating">
+                                             <input type="radio" class="rating__item" value="2" name="rating">
+                                             <input type="radio" class="rating__item" value="3" name="rating">
+                                             <input type="radio" class="rating__item" value="4" name="rating">
+                                             <input type="radio" class="rating__item" value="5" name="rating">
+                                          </div>
+                                       </div>
+                                       <div class="rating__value">3.6</div>
+                                    </div>
+                                 </div>
+                                 <div class="form-product__row">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Prenom" class="input form-product__input">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Adresse électronique*" class="input form-product__input">
+                                 </div>
+                                 <div class="checkbox form-product__checkbox">
+                                    <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                       value="1" name="form[]">
+                                    <label for="c_1" class="checkbox__label"><span class="checkbox__text">
+                                          <span> Oui, je souhaite recevoir la newsletter personnalisée d'AUTODOC avec
+                                             des
+                                             informations sur les produits et les offres spéci... <a
+                                                href="">Plus</a></span>
+
+                                          <span> Je confirme avoir lu et accepté la présente politique de
+                                             confidentialité</span>
+
+                                       </span></label>
+                                 </div>
+                                 <textarea class="textarea input form-product__textarea"
+                                    placeholder="Message"></textarea>
+                                 <div class="form-product__add-file upload">
+                                    <label class="upload__text" for="upload-photo"> <img src="@img/svg/add-file.svg"
+                                          alt="Icon" class="upload__icon"> Joindre une photo</label>
+                                    <input onchange="showPreview(event);" type="file" name="photo" accept="image/*"
+                                       id="upload-photo" />
+                                    <div class="upload__preview">
+                                       <img alt="preview" src="" id="file-ip-1-preview">
+                                    </div>
+                                 </div>
+
+                                 <button class="button_border button form-product__button">
+                                    Soumettre votre avis
+                                 </button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-tabs__body">
+                        <div class="product__faq faq-product">
+                           <div class="faq-product__row">
+                              <form action="#" class="review-product__form form-product">
+                                 <div class="form-product__head">
+                                    <div class="form-product__title">
+                                       FAQ : Questions et réponses des clients
+                                    </div>
+                                 </div>
+                                 <div class="form-product__text">
+                                    <p><b>0 Questions</b></p>
+                                    <p> <b>Question sur le OSRAM Ampoule, projecteur longue portée 64210L?</b></p>
+                                    <p>SI vous avez toujours des questions sur le produit ou si vous désirez obtenir
+                                       des informations plus détaillées sur celui-ci.</p>
+                                    <p> Vous pouvez nous le faire savoir ici et poser votre question ci-dessous!</p>
+                                    <p><b> Veuillez remplir l'intégralité des champs suivants avant de poser votre
+                                          question!</b></p>
+                                 </div>
+                                 <div class="form-product__row">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Prenom" class="input form-product__input">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Adresse électronique*" class="input form-product__input">
+                                 </div>
+                                 <div class="form-product__input-wrap _tippy">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Code postal de l’adresse d’envoi de la commande"
+                                       class="input form-product__input">
+                                    <span data-tippy-content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis
+                                    repellat iusto? Consectetur itaque aliquid possimus reiciendis! Ad quae beatae itaque
+                                    fugit? Tempore, dolore magnam maxime quia quasi quidem sed." class="tippy">
+                                       <img src="@img/payment/tippy.svg" alt="Icon">
+                                    </span>
+                                 </div>
+                                 <div class="form-product__input-wrap">
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                       placeholder="Votre question à notre service client: *"
+                                       class="input form-product__input">
+                                 </div>
+                                 <button class="button_border button form-product__button">
+                                    Soumettre votre avis
+                                 </button>
+                                 <div class="checkbox form-product__checkbox">
+                                    <input id="c22_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                       value="1" name="form[]">
+                                    <label for="c22_1" class="checkbox__label"><span class="checkbox__text">
+                                          <span> Oui, je souhaite recevoir la newsletter personnalisée d'AUTODOC avec
+                                             des
+                                             informations sur les produits et les offres spéci... <a href="">Plus</a>
+                                          </span>
+
+                                          <span> Je confirme avoir lu et accepté la présente politique de
+                                             confidentialité</span>
+
+                                       </span></label>
+                                 </div>
+                              </form>
+                              <div class="faq-product__column">
+                                 <div class="faq-product__payment product-payment">
+                                    <div class="product-payment__block">
+                                       <div class="product-payment__title">
+                                          Paiement
+                                       </div>
+                                       <div class="product-payment__row">
+                                          <div class="product-payment__item">
+                                             <img src="@img/payment/01.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__item">
+                                             <img src="@img/payment/02.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__item">
+                                             <img src="@img/payment/03.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__item">
+                                             <img src="@img/payment/04.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__item">
+                                             <img src="@img/payment/05.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__item">
+                                             <img src="@img/payment/06.png" alt="Image">
+                                          </div>
+                                       </div>
+                                       <div class="product-payment__text">
+                                          <p> Souhaitez-vous en savoir plus sur cette pièce : Ampoule, projecteur longue
+                                             portée
+                                             OSRAM ? Lisez <a href="">Ampoule, projecteur longue portée 64210L FAQ et
+                                                critiques de
+                                                clients!</a></p>
+
+                                          <p> Avez-vous besoin d'aide? <a href="">Contact</a></p>
+                                       </div>
+                                    </div>
+                                    <div class="product-payment__block">
+                                       <div class="product-payment__title">
+                                          Mode de livraison
+                                       </div>
+                                       <div class="product-payment__row2">
+                                          <div class="product-payment__del">
+                                             <img src="@img/payment/p01.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__del">
+                                             <img src="@img/payment/p02.png" alt="Image">
+                                          </div>
+                                          <div class="product-payment__del">
+                                             <img src="@img/payment/p03.png" alt="Image">
+                                          </div>
+                                       </div>
+                                       <div class="product-payment__text">
+                                          <p>Chaque commande dont la valeur en termes de marchandises est d'au moins
+                                             <b>120
+                                                €</b>, bénéficie des frais de port gratuits en France. Si le montant
+                                             total de
+                                             la commande est inférieur à 120 €, les frais de port seront de 6,95 €.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="shop grey">
+            <div class="shop__container">
+               <h2 class="title shop__title">you might also like
+               </h2>
+               <div class="shop__slider-wrap">
+                  <div class="shop__slider swiper">
+                     <div class="shop__wrapper swiper-wrapper">
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__slide swiper-slide">
+                           <div class="shop__card card">
+                              <button class="card__heart">
+                                 <svg class="card__icon">
+                                    <use href="@img/icons/icons.svg#heart"></use>
+                                 </svg>
+                              </button>
+                              <div class="card__top">
+                                 <a href="" class="card__image-ibg">
+                                    <img src="@img/shop/01.png" alt="Image">
+                                 </a>
+                                 <a href="" class="card__title">RIDEX Jeu de plaquettes de frein</a>
+                                 <div class="card__art">
+                                    Réf.: 402B0336
+                                 </div>
+                              </div>
+                              <div class="card__bottom">
+                                 <div class="card__price">
+                                    23,75 €
+                                 </div>
+                                 <div class="card__descr">
+                                    <p>20% de TVA inclus ,</p>
+                                    <p>frais de livraison</p>
+                                 </div>
+                                 <a href="" class="card__button button">
+                                    Add to cart
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="shop__pagination pagination white"></div>
+                  <div class="shop__arrows arrows">
+                     <button class="arrows__button_prev arrows__button shop__prev">
+                        <img src="@img/svg/arrow-slider.svg" alt="Arrow">
+                     </button>
+                     <button class="arrows__button_next arrows__button shop__next">
+                        <img src="@img/svg/arrow-slider.svg" alt="Arrow">
+                     </button>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <section class="faq white">
+            <div class="faq__container">
+               <h2 class="title  faq__title"> Frequently asked Questions</h2>
+               <div class="faq__row">
+                  <div data-spollers class="faq__column">
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                  </div>
+                  <div data-spollers class="faq__column">
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                     <div class="faq__item">
+                        <div data-spoller class=" faq__title-spoller">
+                           Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                        </div>
+                        <div class="faq__body">
+                           RNG (Random Number Generator) - is the "heart" of the machine, which provides complete
+                           unpredictability of scenarios on it. RNG randomly determines the order in which characters
+                           are dropped.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="store">
+            <div class="store__container">
+               <div class="store__row">
+                  <div class="store__image"><img src="@img/store/phone.png" alt="Icon"></div>
+                  <div class="store__info">
+                     Acheter à travers l'appli est toujours moins cher que sur le site web
+                  </div>
+                  <div class="store__column">
+                     <div class="store__qr">
+                        <img src="@img/store/qr.png" alt="Qr">
+                     </div>
+                     <div class="store__buttons">
+                        <a href="" class="store__button">
+                           <img src="@img/store/button1.png" alt="Button">
+                        </a>
+                        <a href="" class="store__button">
+                           <img src="@img/store/button2.png" alt="Button">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <section class="social">
+            <div class="social__container">
+               <h2 class="title social__title">
+                  RÉPARER SA VOITURE N'A JAMAIS ÉTÉ AUSSI SIMPLE
+               </h2>
+               <div class="social__descr">
+                  Finis les instructions compliquées et les schémas déroutants. Suivez les tutoriels pratiques et
+                  simples d'AUTODOC pour réparer votre voiture
+               </div>
+               <div class="social__slider swiper">
+                  <div class="social__wrapper swiper-wrapper">
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/01.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Guides détaillés et tutoriels vidéo gratuits pour réparer soi-même sa voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo1.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social2.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Leçons vidéo de nos experts : toutes les informations nécessaires pour réparer votre
+                                 voiture.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo2.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="social__slide  swiper-slide">
+                        <a href="" class="social__card card-social">
+                           <div class="card-social__content">
+                              <div class="card-social__image-ibg">
+                                 <img src="@img/social/social3.jpg" alt="Image">
+                              </div>
+                              <div class="card-social__title">
+                                 Suivez les tendances et l'actualité et profitez de conseils et articles sur les
+                                 voitures.
+                              </div>
+                           </div>
+                           <div class="card-social__logo-wrap">
+                              <img src="@img/social/logo3.png" alt="Logo">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="pagination social__pagination"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>
